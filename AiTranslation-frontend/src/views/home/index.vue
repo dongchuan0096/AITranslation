@@ -7,7 +7,6 @@ import LineChart from './modules/line-chart.vue';
 import PieChart from './modules/pie-chart.vue';
 import ProjectNews from './modules/project-news.vue';
 import CreativityBanner from './modules/creativity-banner.vue';
-import Translate from './modules/translate.vue';
 
 const appStore = useAppStore();
 
@@ -38,7 +37,6 @@ const gap = computed(() => (appStore.isMobile ? 0 : 16));
         <CreativityBanner />
       </NGi>
     </NGrid>
-    <Translate />
   </NSpace>
 </template>
 

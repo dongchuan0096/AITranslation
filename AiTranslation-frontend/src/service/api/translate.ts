@@ -45,9 +45,9 @@ export function translateTextFull(data: {
   });
 }
 
-
 /**
  * 图片翻译接口
+ *
  * @param data 翻译参数
  * @returns 翻译结果
  */
@@ -104,6 +104,7 @@ export function translateImage(data: {
 
 /**
  * 重新渲染图片接口
+ *
  * @param data 渲染参数
  * @returns 渲染结果
  */
@@ -140,6 +141,7 @@ export function reRenderImage(data: {
 
 /**
  * 重新渲染单个气泡接口
+ *
  * @param data 单气泡渲染参数
  * @returns 渲染结果
  */
@@ -175,6 +177,7 @@ export function reRenderSingleBubble(data: {
 
 /**
  * 应用设置到所有图片接口
+ *
  * @param data 设置参数
  * @returns 处理结果
  */

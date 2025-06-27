@@ -107,6 +107,9 @@ const fontOptions = fontList.map(f => ({ label: f, value: f }));
 
 const modelConfigStore = useModelConfigStore();
 
+// 默认翻译提示词
+const DEFAULT_TRANSLATION_PROMPT = `你是一个语言识别与翻译助手。请完成以下两件事：（1）判断我提供的原文属于哪种语言，输出该语言的 ISO 639-1 两位语言代码（如 zh 表示中文，en 表示英文，ja 表示日文；（2）将该段原文翻译为我指定的目标语言，翻译时请尽量保持含义准确、语言自然，并控制在不超过原文长度的范围内。请按以下格式输出："detected": "<原文语言代码>","translation": "<翻译后的文本>"`;
+
 const form = ref({
   provider: modelConfigStore.config.provider || '',
   providerInput: false,
@@ -150,7 +153,7 @@ const form = ref({
   translationRpmLimit: modelConfigStore.config.translationRpmLimit || 0,
 
   // 提示词设置
-  mangaTranslationPrompt: modelConfigStore.config.mangaTranslationPrompt || '',
+  mangaTranslationPrompt: modelConfigStore.config.mangaTranslationPrompt || DEFAULT_TRANSLATION_PROMPT,
   promptFormat: modelConfigStore.config.promptFormat || 'normal',
   rememberPrompt: modelConfigStore.config.rememberPrompt !== undefined ? modelConfigStore.config.rememberPrompt : false,
   promptName: modelConfigStore.config.promptName || '',
@@ -205,12 +208,21 @@ const form = ref({
 onMounted(() => {
   // 回显配置
   Object.assign(form.value, modelConfigStore.config);
+
+  // 如果没有设置提示词，使用默认提示词
+  if (!form.value.mangaTranslationPrompt) {
+    form.value.mangaTranslationPrompt = DEFAULT_TRANSLATION_PROMPT;
+  }
 });
 
 function handleSave() {
-  modelConfigStore.setConfig({
-    ...form.value
-  });
+  // 确保 apiKey 和 translationApiKey 保持同步
+  const configToSave = {
+    ...form.value,
+    apiKey: form.value.translationApiKey // 同步到 apiKey 字段
+  };
+
+  modelConfigStore.setConfig(configToSave);
   message.success('保存成功！');
 }
 
@@ -260,7 +272,12 @@ watch(
             <NInput v-model:value="form.aiVisionOcrModelName" placeholder="请输入模型名称" />
           </NFormItem>
           <NFormItem label="AI视觉OCR提示词">
-            <NInput v-model:value="form.aiVisionOcrPrompt" type="textarea" placeholder="请输入提示词" />
+            <NInput
+              v-model:value="form.aiVisionOcrPrompt"
+              type="textarea"
+              placeholder="请输入提示词"
+              :autosize="{ minRows: 2, maxRows: 8 }"
+            />
           </NFormItem>
           <NFormItem label="AI视觉OCR提示词格式">
             <NSelect v-model:value="form.aiVisionOcrPromptFormat" :options="promptFormatOptions" />
@@ -332,7 +349,12 @@ watch(
       <NCollapseItem name="prompt-settings" title="提示词设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="漫画翻译提示词">
-            <NInput v-model:value="form.mangaTranslationPrompt" type="textarea" placeholder="请输入翻译提示词" />
+            <NInput
+              v-model:value="form.mangaTranslationPrompt"
+              type="textarea"
+              placeholder="请输入翻译提示词"
+              :autosize="{ minRows: 3, maxRows: 10 }"
+            />
           </NFormItem>
           <NFormItem label="提示词格式">
             <NSelect v-model:value="form.promptFormat" :options="promptFormatOptions" />
@@ -347,7 +369,12 @@ watch(
             <NSwitch v-model:value="form.enableIndependentTextPrompt" />
           </NFormItem>
           <NFormItem label="文本框提示词">
-            <NInput v-model:value="form.textBoxPrompt" type="textarea" placeholder="请输入文本框提示词" />
+            <NInput
+              v-model:value="form.textBoxPrompt"
+              type="textarea"
+              placeholder="请输入文本框提示词"
+              :autosize="{ minRows: 2, maxRows: 8 }"
+            />
           </NFormItem>
           <NFormItem label="记住文本框提示词">
             <NSwitch v-model:value="form.rememberTextBoxPrompt" />

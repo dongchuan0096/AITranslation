@@ -14,6 +14,7 @@ from datetime import timedelta
 from django.utils import timezone
 from .models import UserProfile, EmailCode
 from apps.utils.response import APIResponse
+from apps.utils.jwt_utils import JWTUtils  # 导入JWT工具类
 from rest_framework_simplejwt.tokens import RefreshToken, TokenError
 from rest_framework.permissions import IsAuthenticated
 from rest_framework_simplejwt.authentication import JWTAuthentication
@@ -22,10 +23,28 @@ class LoginView(APIView):
     def post(self, request):
         username = request.data.get('userName')
         password = request.data.get('password')
+        token_type = request.data.get('tokenType', 'default')  # 获取token类型
+        
         user = authenticate(username=username, password=password)
         if user:
-            refresh = RefreshToken.for_user(user)
-            return APIResponse.success(msg="登录成功", data={"token": str(refresh.access_token), "refreshToken": str(refresh)})
+            # 根据token类型创建不同过期时间的token
+            if token_type == 'short':
+                tokens = JWTUtils.create_short_lived_token(user, hours=1)
+            elif token_type == 'long':
+                tokens = JWTUtils.create_long_lived_token(user, days=30)
+            elif token_type == 'session':
+                tokens = JWTUtils.create_session_token(user, minutes=30)
+            else:
+                # 默认使用settings中的配置
+                tokens = JWTUtils.create_tokens_for_user(user)
+            
+            return APIResponse.success(
+                msg="登录成功", 
+                data={
+                    "token": tokens['access_token'], 
+                    "refreshToken": tokens['refresh_token']
+                }
+            )
         else:
             return APIResponse.fail(msg="用户名或密码错误", code="1001")
 
@@ -34,6 +53,8 @@ class RegisterView(APIView):
         email = request.data.get('email')
         password = request.data.get('password')
         code = request.data.get('code')
+        token_type = request.data.get('tokenType', 'default')  # 获取token类型
+        
         if not email or not password or not code:
             return APIResponse.fail(msg="邮箱、验证码和密码不能为空", code="1002")
         if UserProfile.objects.filter(email=email).exists():
@@ -45,8 +66,25 @@ class RegisterView(APIView):
             return APIResponse.fail(msg="验证码错误或已过期", code="1004")
         user = User.objects.create_user(username=email, password=password, email=email)
         UserProfile.objects.create(user=user, email=email)
-        refresh = RefreshToken.for_user(user)
-        return APIResponse.success(msg="注册成功", data={"token": str(refresh.access_token), "refreshToken": str(refresh)})
+        
+        # 根据token类型创建不同过期时间的token
+        if token_type == 'short':
+            tokens = JWTUtils.create_short_lived_token(user, hours=1)
+        elif token_type == 'long':
+            tokens = JWTUtils.create_long_lived_token(user, days=30)
+        elif token_type == 'session':
+            tokens = JWTUtils.create_session_token(user, minutes=30)
+        else:
+            # 默认使用settings中的配置
+            tokens = JWTUtils.create_tokens_for_user(user)
+        
+        return APIResponse.success(
+            msg="注册成功", 
+            data={
+                "token": tokens['access_token'], 
+                "refreshToken": tokens['refresh_token']
+            }
+        )
 
 
 class SendEmailCodeView(APIView):
