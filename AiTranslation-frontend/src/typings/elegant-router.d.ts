@@ -98,6 +98,7 @@ declare module "@elegant-router/types" {
     "pro-naive_table_remote": "/pro-naive/table/remote";
     "pro-naive_table_row-edit": "/pro-naive/table/row-edit";
     "translatecomic": "/translatecomic";
+    "translatefile": "/translatefile";
     "translatetext": "/translatetext";
     "translatevoice": "/translatevoice";
     "user-center": "/user-center";
@@ -162,6 +163,7 @@ declare module "@elegant-router/types" {
     | "plugin"
     | "pro-naive"
     | "translatecomic"
+    | "translatefile"
     | "translatetext"
     | "translatevoice"
     | "user-center"
@@ -184,6 +186,7 @@ declare module "@elegant-router/types" {
   export type LastLevelRouteKey = Extract<
     RouteKey,
     | "translatecomic"
+    | "translatefile"
     | "translatetext"
     | "translatevoice"
     | "403"

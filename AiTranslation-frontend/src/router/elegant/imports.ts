@@ -16,6 +16,7 @@ export const layouts: Record<RouteLayout, RouteComponent | (() => Promise<RouteC
 
 export const views: Record<LastLevelRouteKey, RouteComponent | (() => Promise<RouteComponent>)> = {
   translatecomic: () => import("@/views/Translatecomic/index.vue"),
+  translatefile: () => import("@/views/Translatefile/index.vue"),
   translatetext: () => import("@/views/Translatetext/index.vue"),
   translatevoice: () => import("@/views/Translatevoice/index.vue"),
   403: () => import("@/views/_builtin/403/index.vue"),

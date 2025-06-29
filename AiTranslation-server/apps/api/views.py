@@ -20,12 +20,14 @@ from apps.utils.response import APIResponse
 from apps.utils.xunfei_config import XUNFEI_CONFIG, XUNFEI_ASR_URL, SUPPORTED_AUDIO_FORMATS, SUPPORTED_LANGUAGES, ENGINE_TYPES
 from apps.utils.api_logger import log_api_access
 from apps.utils.spark_mucl_cn_iat import create_xunfei_speech_recognition
-from apps.api.models import APIAccessLog, APIUsageStatistics
+from apps.api.models import APIAccessLog, APIUsageStatistics, FileUploadRecord
+from apps.utils.oss_uploader import oss_uploader
 import re
 import random
 import soundfile as sf
 import wave
 import contextlib
+from django.conf import settings
 
 #flask接口
 SPARK_API_HOST = "127.0.0.1:5000"
@@ -84,10 +86,13 @@ def parse_bubble_texts(bubble_texts):
 class TextTranslateView(APIView):
     @log_api_access(api_name="文本翻译", sensitive_fields=['password', 'token'])
     def post(self, request):
-        # 直接将收到的参数转发到本地后端的 /api/spark/text-translate
+        # 获取请求数据
+        request_data = request.data.copy()
+        
+        # 直接将处理后的参数转发到本地后端的 /api/spark/text-translate
         spark_url = f"http://{SPARK_API_HOST}/api/text-translate/"
         try:
-            resp = requests.post(spark_url, json=request.data, timeout=100)
+            resp = requests.post(spark_url, json=request_data, timeout=100)
             return Response(resp.json(), status=resp.status_code)
         except Exception as e:
             return APIResponse.fail(msg=f"Spark接口调用异常: {str(e)}", code="4003")
@@ -295,31 +300,32 @@ class SpeechRecognitionFileView(APIView):
     
     @log_api_access(api_name="文件上传语音识别", sensitive_fields=['password', 'token'])
     def post(self, request):
-        """通过文件上传进行语音识别"""
+        """文件上传语音识别"""
+        temp_file_path = None
+        
         try:
-            # 获取上传的音频文件
-            audio_file = request.FILES.get('audio_file')
-            
-            if not audio_file:
+            # 检查文件上传
+            if 'audio_file' not in request.FILES:
                 return APIResponse.fail(msg="请上传音频文件", code="4001")
             
-            # 检查文件类型
-            file_extension = audio_file.name.split('.')[-1].lower()
-            if file_extension not in ['wav', 'mp3', 'pcm']:
-                return APIResponse.fail(msg=f"不支持的音频格式: {file_extension}，仅支持wav、mp3、pcm", code="4002")
-            
-            # 检查文件大小
+            audio_file = request.FILES['audio_file']
             file_size = audio_file.size
-            max_size = 50 * 1024 * 1024  # 50MB
-            if file_size > max_size:
-                return APIResponse.fail(msg=f"文件过大: {file_size / 1024 / 1024:.1f}MB (最大50MB)", code="4003")
+            file_extension = audio_file.name.split('.')[-1].lower()
             
-            # 保存临时文件
-            temp_file = tempfile.NamedTemporaryFile(delete=False, suffix=f'.{file_extension}')
-            for chunk in audio_file.chunks():
-                temp_file.write(chunk)
-            temp_file.close()
-            temp_file_path = temp_file.name
+            # 验证文件格式
+            if file_extension not in ['wav', 'mp3', 'm4a', 'amr', 'pcm']:
+                return APIResponse.fail(msg=f"不支持的音频格式: {file_extension}", code="4002")
+            
+            # 验证文件大小（最大50MB）
+            max_size = 50 * 1024 * 1024
+            if file_size > max_size:
+                return APIResponse.fail(msg=f"文件大小超过限制: {file_size} > {max_size}", code="4003")
+            
+            # 保存到临时文件
+            temp_file_path = tempfile.mktemp(suffix=f'.{file_extension}')
+            with open(temp_file_path, 'wb') as f:
+                for chunk in audio_file.chunks():
+                    f.write(chunk)
             
             try:
                 # 创建语音识别客户端
@@ -397,7 +403,7 @@ class APIAccessLogView(APIView):
     
     @log_api_access(api_name="API访问记录查询")
     def get(self, request):
-        """获取当前用户的API访问记录"""
+        """查询API访问记录"""
         try:
             # 获取查询参数
             page = int(request.GET.get('page', 1))
@@ -414,18 +420,10 @@ class APIAccessLogView(APIView):
                 queryset = queryset.filter(api_name__icontains=api_name)
             
             if start_date:
-                try:
-                    start_datetime = datetime.strptime(start_date, '%Y-%m-%d')
-                    queryset = queryset.filter(created_at__gte=start_datetime)
-                except ValueError:
-                    pass
+                queryset = queryset.filter(created_at__date__gte=start_date)
             
             if end_date:
-                try:
-                    end_datetime = datetime.strptime(end_date, '%Y-%m-%d') + timedelta(days=1)
-                    queryset = queryset.filter(created_at__lt=end_datetime)
-                except ValueError:
-                    pass
+                queryset = queryset.filter(created_at__date__lte=end_date)
             
             if is_success in ['true', 'false']:
                 queryset = queryset.filter(is_success=(is_success == 'true'))
@@ -434,32 +432,269 @@ class APIAccessLogView(APIView):
             total_count = queryset.count()
             start_index = (page - 1) * page_size
             end_index = start_index + page_size
-            
             logs = queryset[start_index:end_index]
             
+            # 统计数据
+            stats = {
+                'total_requests': total_count,
+                'successful_requests': queryset.filter(is_success=True).count(),
+                'failed_requests': queryset.filter(is_success=False).count(),
+                'avg_execution_time': queryset.aggregate(avg_time=Avg('execution_time'))['avg_time'] or 0,
+                'total_request_size': queryset.aggregate(total_size=Sum('request_size'))['total_size'] or 0,
+            }
+            
             # 格式化数据
-            log_list = []
+            log_data = []
             for log in logs:
-                log_list.append({
+                log_data.append({
                     'id': log.id,
                     'api_name': log.api_name,
                     'api_path': log.api_path,
                     'http_method': log.http_method,
                     'ip_address': log.ip_address,
+                    'is_success': log.is_success,
                     'execution_time': log.execution_time,
-                    'duration_ms': log.duration_ms,
                     'request_size_kb': log.request_size_kb,
                     'response_size_kb': log.response_size_kb,
-                    'is_success': log.is_success,
-                    'response_status': log.response_status,
-                    'error_message': log.error_message,
                     'created_at': log.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+                    'error_message': log.error_message
                 })
             
             return APIResponse.success(
-                msg="获取API访问记录成功",
+                msg="查询成功",
                 data={
-                    'logs': log_list,
+                    'logs': log_data,
+                    'pagination': {
+                        'page': page,
+                        'page_size': page_size,
+                        'total_count': total_count,
+                        'total_pages': (total_count + page_size - 1) // page_size
+                    },
+                    'statistics': stats
+                }
+            )
+            
+        except Exception as e:
+            return APIResponse.fail(msg=f"查询失败: {str(e)}", code="5001")
+
+class APIUsageStatisticsView(APIView):
+    """API使用统计查询接口"""
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+    
+    @log_api_access(api_name="API使用统计查询")
+    def get(self, request):
+        """查询API使用统计"""
+        try:
+            # 获取查询参数
+            start_date = request.GET.get('start_date', '')
+            end_date = request.GET.get('end_date', '')
+            api_name = request.GET.get('api_name', '')
+            
+            # 构建查询条件
+            queryset = APIUsageStatistics.objects.filter(user=request.user)
+            
+            if start_date:
+                queryset = queryset.filter(date__gte=start_date)
+            
+            if end_date:
+                queryset = queryset.filter(date__lte=end_date)
+            
+            if api_name:
+                queryset = queryset.filter(api_name__icontains=api_name)
+            
+            # 获取统计数据
+            stats = queryset.order_by('-date')
+            
+            # 格式化数据
+            stats_data = []
+            for stat in stats:
+                stats_data.append({
+                    'api_name': stat.api_name,
+                    'date': stat.date.strftime('%Y-%m-%d'),
+                    'total_requests': stat.total_requests,
+                    'successful_requests': stat.successful_requests,
+                    'failed_requests': stat.failed_requests,
+                    'success_rate': stat.success_rate,
+                    'avg_execution_time': stat.avg_execution_time,
+                    'total_request_size_mb': round(stat.total_request_size / (1024 * 1024), 2),
+                    'total_response_size_mb': round(stat.total_response_size / (1024 * 1024), 2)
+                })
+            
+            # 汇总统计
+            total_stats = {
+                'total_requests': sum(s.total_requests for s in stats),
+                'successful_requests': sum(s.successful_requests for s in stats),
+                'failed_requests': sum(s.failed_requests for s in stats),
+                'avg_execution_time': stats.aggregate(avg_time=Avg('avg_execution_time'))['avg_time'] or 0,
+                'total_request_size_mb': round(sum(s.total_request_size for s in stats) / (1024 * 1024), 2),
+                'total_response_size_mb': round(sum(s.total_response_size for s in stats) / (1024 * 1024), 2)
+            }
+            
+            if total_stats['total_requests'] > 0:
+                total_stats['overall_success_rate'] = round(
+                    total_stats['successful_requests'] / total_stats['total_requests'] * 100, 2
+                )
+            else:
+                total_stats['overall_success_rate'] = 0
+            
+            return APIResponse.success(
+                msg="查询成功",
+                data={
+                    'statistics': stats_data,
+                    'summary': total_stats
+                }
+            )
+            
+        except Exception as e:
+            return APIResponse.fail(msg=f"查询失败: {str(e)}", code="5002")
+
+class FileUploadView(APIView):
+    """文件上传到阿里云OSS接口"""
+    
+    @log_api_access(api_name="文件上传OSS", sensitive_fields=['password', 'token'])
+    def post(self, request):
+        """上传文件到阿里云OSS"""
+        try:
+            # 检查文件上传
+            if 'file' not in request.FILES:
+                return APIResponse.fail(msg="请上传文件", code="4001")
+            
+            uploaded_file = request.FILES['file']
+            original_filename = uploaded_file.name
+            
+            # 获取当前用户（如果已认证）
+            user = request.user if request.user.is_authenticated else None
+            
+            # 上传文件到OSS
+            result = oss_uploader.upload_file(uploaded_file, original_filename, user)
+            
+            if result['success']:
+                return APIResponse.success(
+                    msg="文件上传成功",
+                    data={
+                        'file_record_id': result['file_record_id'],
+                        'original_filename': result['original_filename'],
+                        'file_size': result['file_size'],
+                        'file_size_mb': round(result['file_size'] / (1024 * 1024), 2),
+                        'file_type': result['file_type'],
+                        'oss_key': result['oss_key'],
+                        'oss_url': result['oss_url'],
+                        'cdn_url': result['cdn_url'],
+                        'upload_time': round(result['upload_time'], 3),
+                        'md5_hash': result['md5_hash']
+                    }
+                )
+            else:
+                return APIResponse.fail(
+                    msg=f"文件上传失败: {result['error']}", 
+                    code="4002"
+                )
+                
+        except Exception as e:
+            return APIResponse.fail(msg=f"文件上传异常: {str(e)}", code="4003")
+
+class FileUploadInfoView(APIView):
+    """文件上传信息查询接口"""
+    
+    @log_api_access(api_name="文件上传信息查询")
+    def get(self, request):
+        """获取文件上传配置信息"""
+        from apps.utils.oss_config import UPLOAD_CONFIG, SECURITY_CONFIG, PERFORMANCE_CONFIG
+        
+        return APIResponse.success(
+            msg="获取文件上传信息成功",
+            data={
+                "upload_config": {
+                    "max_file_size_mb": round(UPLOAD_CONFIG['MAX_FILE_SIZE'] / (1024 * 1024), 2),
+                    "allowed_extensions": UPLOAD_CONFIG['ALLOWED_EXTENSIONS'],
+                    "allowed_mime_types": UPLOAD_CONFIG['ALLOWED_MIME_TYPES'],
+                    "upload_paths": UPLOAD_CONFIG['UPLOAD_PATH']
+                },
+                "security_config": {
+                    "enable_md5_check": SECURITY_CONFIG['ENABLE_MD5_CHECK'],
+                    "enable_file_type_check": SECURITY_CONFIG['ENABLE_FILE_TYPE_CHECK'],
+                    "enable_size_limit": SECURITY_CONFIG['ENABLE_SIZE_LIMIT']
+                },
+                "performance_config": {
+                    "chunk_size_mb": round(PERFORMANCE_CONFIG['CHUNK_SIZE'] / (1024 * 1024), 2),
+                    "concurrent_uploads": PERFORMANCE_CONFIG['CONCURRENT_UPLOADS'],
+                    "retry_times": PERFORMANCE_CONFIG['RETRY_TIMES'],
+                    "timeout": PERFORMANCE_CONFIG['TIMEOUT']
+                },
+                "api_endpoints": {
+                    "upload": "/api/file-upload/",
+                    "info": "/api/file-upload-info/",
+                    "list": "/api/file-upload-list/",
+                    "delete": "/api/file-upload-delete/"
+                },
+                "storage_provider": "阿里云对象存储(OSS)"
+            }
+        )
+
+class FileUploadListView(APIView):
+    """文件上传记录列表接口"""
+    authentication_classes = [JWTAuthentication]
+    permission_classes = [IsAuthenticated]
+    
+    @log_api_access(api_name="文件上传记录查询")
+    def get(self, request):
+        """查询文件上传记录"""
+        try:
+            # 获取查询参数
+            page = int(request.GET.get('page', 1))
+            page_size = int(request.GET.get('page_size', 20))
+            file_type = request.GET.get('file_type', '')
+            upload_status = request.GET.get('upload_status', '')
+            start_date = request.GET.get('start_date', '')
+            end_date = request.GET.get('end_date', '')
+            
+            # 构建查询条件
+            queryset = FileUploadRecord.objects.filter(user=request.user)
+            
+            if file_type:
+                queryset = queryset.filter(file_type__startswith=file_type)
+            
+            if upload_status:
+                queryset = queryset.filter(upload_status=upload_status)
+            
+            if start_date:
+                queryset = queryset.filter(created_at__date__gte=start_date)
+            
+            if end_date:
+                queryset = queryset.filter(created_at__date__lte=end_date)
+            
+            # 分页
+            total_count = queryset.count()
+            start_index = (page - 1) * page_size
+            end_index = start_index + page_size
+            files = queryset[start_index:end_index]
+            
+            # 格式化数据
+            file_data = []
+            for file_record in files:
+                file_data.append({
+                    'id': file_record.id,
+                    'original_filename': file_record.original_filename,
+                    'file_size': file_record.file_size,
+                    'file_size_mb': file_record.file_size_mb,
+                    'file_type': file_record.file_type,
+                    'file_extension': file_record.file_extension,
+                    'oss_url': file_record.oss_url,
+                    'cdn_url': file_record.cdn_url,
+                    'upload_status': file_record.upload_status,
+                    'upload_time': file_record.upload_time,
+                    'created_at': file_record.created_at.strftime('%Y-%m-%d %H:%M:%S'),
+                    'is_image': file_record.is_image,
+                    'is_video': file_record.is_video,
+                    'is_audio': file_record.is_audio,
+                    'is_document': file_record.is_document
+                })
+            
+            return APIResponse.success(
+                msg="查询成功",
+                data={
+                    'files': file_data,
                     'pagination': {
                         'page': page,
                         'page_size': page_size,
@@ -470,89 +705,33 @@ class APIAccessLogView(APIView):
             )
             
         except Exception as e:
-            return APIResponse.fail(msg=f"获取API访问记录失败: {str(e)}", code="4008")
+            return APIResponse.fail(msg=f"查询失败: {str(e)}", code="5003")
 
-class APIUsageStatisticsView(APIView):
-    """API使用统计查询接口"""
+class FileUploadDeleteView(APIView):
+    """文件删除接口"""
     authentication_classes = [JWTAuthentication]
     permission_classes = [IsAuthenticated]
     
-    @log_api_access(api_name="API使用统计查询")
-    def get(self, request):
-        """获取当前用户的API使用统计"""
+    @log_api_access(api_name="文件删除")
+    def delete(self, request, file_id):
+        """删除文件"""
         try:
-            # 获取查询参数
-            days = int(request.GET.get('days', 7))  # 默认查询最近7天
-            api_name = request.GET.get('api_name', '')
+            # 查找文件记录
+            try:
+                file_record = FileUploadRecord.objects.get(id=file_id, user=request.user)
+            except FileUploadRecord.DoesNotExist:
+                return APIResponse.fail(msg="文件不存在或无权限删除", code="4004")
             
-            # 计算日期范围
-            end_date = timezone.now().date()
-            start_date = end_date - timedelta(days=days-1)
+            # 从OSS删除文件
+            delete_result = oss_uploader.delete_file(file_record.oss_key)
             
-            # 构建查询条件
-            queryset = APIUsageStatistics.objects.filter(
-                user=request.user,
-                date__range=[start_date, end_date]
-            )
-            
-            if api_name:
-                queryset = queryset.filter(api_name__icontains=api_name)
-            
-            # 获取统计数据
-            statistics = queryset.order_by('date')
-            
-            # 格式化数据
-            stats_list = []
-            for stat in statistics:
-                stats_list.append({
-                    'date': stat.date.strftime('%Y-%m-%d'),
-                    'api_name': stat.api_name,
-                    'total_requests': stat.total_requests,
-                    'successful_requests': stat.successful_requests,
-                    'failed_requests': stat.failed_requests,
-                    'success_rate': stat.success_rate,
-                    'avg_execution_time': stat.avg_execution_time,
-                    'total_request_size_mb': round(stat.total_request_size / (1024 * 1024), 2),
-                    'total_response_size_mb': round(stat.total_response_size / (1024 * 1024), 2),
-                })
-            
-            # 计算总体统计
-            total_stats = queryset.aggregate(
-                total_requests=Sum('total_requests'),
-                successful_requests=Sum('successful_requests'),
-                failed_requests=Sum('failed_requests'),
-                total_execution_time=Sum('total_execution_time'),
-                total_request_size=Sum('total_request_size'),
-                total_response_size=Sum('total_response_size'),
-            )
-            
-            overall_stats = {
-                'total_requests': total_stats['total_requests'] or 0,
-                'successful_requests': total_stats['successful_requests'] or 0,
-                'failed_requests': total_stats['failed_requests'] or 0,
-                'overall_success_rate': round(
-                    (total_stats['successful_requests'] or 0) / (total_stats['total_requests'] or 1) * 100, 2
-                ),
-                'avg_execution_time': round(
-                    (total_stats['total_execution_time'] or 0) / (total_stats['total_requests'] or 1), 3
-                ),
-                'total_request_size_mb': round((total_stats['total_request_size'] or 0) / (1024 * 1024), 2),
-                'total_response_size_mb': round((total_stats['total_response_size'] or 0) / (1024 * 1024), 2),
-            }
-            
-            return APIResponse.success(
-                msg="获取API使用统计成功",
-                data={
-                    'statistics': stats_list,
-                    'overall_stats': overall_stats,
-                    'date_range': {
-                        'start_date': start_date.strftime('%Y-%m-%d'),
-                        'end_date': end_date.strftime('%Y-%m-%d'),
-                        'days': days
-                    }
-                }
-            )
-            
+            if delete_result['success']:
+                # 删除数据库记录
+                file_record.delete()
+                return APIResponse.success(msg="文件删除成功")
+            else:
+                return APIResponse.fail(msg=f"OSS文件删除失败: {delete_result['error']}", code="4005")
+                
         except Exception as e:
-            return APIResponse.fail(msg=f"获取API使用统计失败: {str(e)}", code="4009")
+            return APIResponse.fail(msg=f"文件删除异常: {str(e)}", code="4006")
 

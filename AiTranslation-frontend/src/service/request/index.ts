@@ -31,7 +31,6 @@ export const request = createFlatRequest<App.Service.Response, RequestInstanceSt
       // when the backend response code is "0000"(default), it means the request is success
       // to change this logic by yourself, you can modify the `VITE_SERVICE_SUCCESS_CODE` in `.env` file
       return String(response.data.code) === import.meta.env.VITE_SERVICE_SUCCESS_CODE;
-
     },
     /** 处理后端失败的情况，如登出、弹窗、token 过期自动刷新等 */
     async onBackendFail(response, instance) {
@@ -40,6 +39,7 @@ export const request = createFlatRequest<App.Service.Response, RequestInstanceSt
 
       function handleLogout() {
         authStore.resetStore();
+        window.location.href = '/login';
       }
 
       function logoutAndCleanup() {
@@ -92,6 +92,13 @@ export const request = createFlatRequest<App.Service.Response, RequestInstanceSt
 
           return instance.request(response.config) as Promise<AxiosResponse>;
         }
+      }
+
+      // 新增：token_not_valid 处理
+      if (responseCode === 'token_not_valid') {
+        alert('token_not_valid');
+        handleLogout();
+        return null;
       }
 
       return null;

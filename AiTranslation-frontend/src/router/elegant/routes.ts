@@ -230,9 +230,7 @@ export const generatedRoutes: GeneratedRoute[] = [
     component: 'layout.base$view.home',
     meta: {
       title: 'home',
-      i18nKey: 'route.home',
-      icon: 'mdi:monitor-dashboard',
-      order: 1
+      i18nKey: 'route.home'
     }
   },
   {
@@ -722,6 +720,17 @@ export const generatedRoutes: GeneratedRoute[] = [
       i18nKey: 'route.translatecomic',
       order: 3,
       icon: 'mdi:book-open-variant'
+    }
+  },
+  {
+    name: 'translatefile',
+    path: '/translatefile',
+    component: 'layout.base$view.translatefile',
+    meta: {
+      title: 'translatefile',
+      i18nKey: 'route.translatefile',
+      order: 5,
+      icon: 'mdi:translate'
     }
   },
   {

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useFullscreen } from '@vueuse/core';
+import { useEventBus, useFullscreen } from '@vueuse/core';
 import { GLOBAL_HEADER_MENU_ID } from '@/constants/app';
 import { useAppStore } from '@/store/modules/app';
 import { useThemeStore } from '@/store/modules/theme';
@@ -27,6 +27,12 @@ defineProps<Props>();
 const appStore = useAppStore();
 const themeStore = useThemeStore();
 const { isFullscreen, toggle } = useFullscreen();
+
+// Copilot 事件总线（或用 emit 也可）
+const copilotBus = useEventBus('open-copilot');
+function toggleCopilot() {
+  copilotBus.emit('toggle');
+}
 </script>
 
 <template>
@@ -52,9 +58,26 @@ const { isFullscreen, toggle } = useFullscreen();
         @switch="themeStore.toggleThemeScheme"
       />
       <ThemeButton />
+      <button class="ai-copilot-btn ml-8px" @click="toggleCopilot">AI Copilot</button>
       <UserAvatar />
     </div>
   </DarkModeContainer>
 </template>
 
-<style scoped></style>
+<style scoped>
+.ai-copilot-btn {
+  height: 32px;
+  padding: 0 16px;
+  border: none;
+  border-radius: 6px;
+  background: linear-gradient(78deg, #8054f2 7%, #3895da 95%);
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.ai-copilot-btn:hover {
+  opacity: 0.85;
+}
+</style>

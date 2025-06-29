@@ -244,6 +244,7 @@ const routeMap: RouteMap = {
   "pro-naive_table_remote": "/pro-naive/table/remote",
   "pro-naive_table_row-edit": "/pro-naive/table/row-edit",
   "translatecomic": "/translatecomic",
+  "translatefile": "/translatefile",
   "translatetext": "/translatetext",
   "translatevoice": "/translatevoice",
   "user-center": "/user-center"

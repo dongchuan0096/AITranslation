@@ -20,7 +20,6 @@ const targetLanguageOptions = ref([
   { label: '意大利语', value: 'it' }
 ]);
 
-
 const form = ref({
   text: '',
   source_language: '',
@@ -98,7 +97,7 @@ function clearAll() {
  <div class="page-header">
       <div class="page-title">
         <NIcon size="24" class="title-icon">
-          <icon-mdi:translate />
+          <i-mdi-translate />
         </NIcon>
         <span>文本翻译</span>
       </div>
@@ -120,7 +119,7 @@ function clearAll() {
               @click="handleTranslate"
             >
               <template #icon>
-                <NIcon size="20"><icon-mdi:arrow-right-bold /></NIcon>
+                <NIcon size="20"><IMdiArrowRightBold /></NIcon>
               </template>
               翻译
             </NButton>
@@ -159,7 +158,7 @@ function clearAll() {
                       title="复制"
                       @click.stop="copyToClipboard(form.text)"
                     >
-                      <NIcon size="18"><icon-mdi:content-copy /></NIcon>
+                      <NIcon size="18"><IMdiContentCopy /></NIcon>
                     </NButton>
                   </template>
                 </NInput>
@@ -199,7 +198,7 @@ function clearAll() {
             </div>
             <div v-else class="empty-state">
               <NIcon size="64" color="#d9d9d9">
-                <icon-mdi:translate />
+                <IMdiTranslate />
               </NIcon>
               <p>翻译结果将显示在这里</p>
               <p class="hint">请输入要翻译的内容，然后点击翻译按钮</p>

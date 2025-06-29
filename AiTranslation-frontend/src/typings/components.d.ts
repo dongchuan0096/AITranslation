@@ -11,6 +11,7 @@ declare module 'vue' {
     AppProvider: typeof import('./../components/common/app-provider.vue')['default']
     BetterScroll: typeof import('./../components/custom/better-scroll.vue')['default']
     ButtonIcon: typeof import('./../components/custom/button-icon.vue')['default']
+    ChatCopilot: typeof import('./../components/ChatCopilot.vue')['default']
     CountTo: typeof import('./../components/custom/count-to.vue')['default']
     CustomIconSelect: typeof import('./../components/custom/custom-icon-select.vue')['default']
     DarkModeContainer: typeof import('./../components/common/dark-mode-container.vue')['default']

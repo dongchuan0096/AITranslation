@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { computed } from 'vue';
+import { useRoute } from 'vue-router';
 import { NConfigProvider, darkTheme } from 'naive-ui';
 import type { WatermarkProps } from 'naive-ui';
+import ChatCopilot from '@/views/home/index1.vue';
 import { useAppStore } from './store/modules/app';
 import { useThemeStore } from './store/modules/theme';
 import { useAuthStore } from './store/modules/auth';
@@ -14,6 +16,7 @@ defineOptions({
 const appStore = useAppStore();
 const themeStore = useThemeStore();
 const authStore = useAuthStore();
+const route = useRoute();
 
 const naiveDarkTheme = computed(() => (themeStore.darkMode ? darkTheme : undefined));
 
@@ -45,6 +48,8 @@ const watermarkProps = computed<WatermarkProps>(() => {
     zIndex: 9999
   };
 });
+
+const showChatCopilot = computed(() => !route.path.startsWith('/login'));
 </script>
 
 <template>
@@ -58,8 +63,13 @@ const watermarkProps = computed<WatermarkProps>(() => {
     <AppProvider>
       <RouterView class="bg-layout" />
       <NWatermark v-if="themeStore.watermark.visible" v-bind="watermarkProps" />
+      <ChatCopilot v-if="showChatCopilot" />
     </AppProvider>
   </NConfigProvider>
 </template>
 
-<style scoped></style>
+<style scoped>
+.body {
+  overflow: hidden;
+}
+</style>

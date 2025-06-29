@@ -287,7 +287,6 @@ async function translateText() {
     const res = await translateTextFull({
       ...form.value,
       text: recognizedText.value,
-      source_language: detectedLanguage.value
     });
 
     const { translation, detected } = processTranslationResult(res.data.translated_text);
@@ -331,7 +330,7 @@ function clearAll() {
     <div class="page-header">
       <div class="page-title">
         <NIcon size="24" class="title-icon">
-          <icon-mdi:volume-high />
+          <IMdiVolumeHigh />
         </NIcon>
         <span>语音识别与翻译</span>
       </div>
@@ -351,7 +350,7 @@ function clearAll() {
               <h4>语音录制</h4>
               <div v-if="isRecording" class="recording-time">
                 <NIcon size="16" color="#ff4d4f">
-                  <icon-mdi:microphone />
+                  <IMdiMicrophone />
                 </NIcon>
                 <span>{{ recordingTimeDisplay }}</span>
               </div>
@@ -369,7 +368,7 @@ function clearAll() {
               >
                 <template #icon>
                   <NIcon size="20">
-                    <icon-mdi:microphone />
+                    <IMdiMicrophone />
                   </NIcon>
                 </template>
                 录音
@@ -378,7 +377,7 @@ function clearAll() {
               <NButton v-else type="error" size="large" class="record-btn" @click="stopRecording">
                 <template #icon>
                   <NIcon size="20">
-                    <icon-mdi:microphone-off />
+                    <IMdiMicrophoneOff />
                   </NIcon>
                 </template>
                 停止
@@ -394,7 +393,7 @@ function clearAll() {
               >
                 <template #icon>
                   <NIcon size="20">
-                    <icon-mdi:play />
+                    <IMdiPlay />
                   </NIcon>
                 </template>
                 播放
@@ -411,7 +410,7 @@ function clearAll() {
               >
                 <template #icon>
                   <NIcon size="20">
-                    <icon-mdi:check />
+                    <IMdiCheck />
                   </NIcon>
                 </template>
                 识别
@@ -481,7 +480,7 @@ function clearAll() {
 
           <div v-else-if="!recognizedText" class="empty-state">
             <NIcon size="64" color="#d9d9d9">
-              <icon-mdi:translate />
+              <IMdiTranslate />
             </NIcon>
             <p>翻译结果将显示在这里</p>
             <p class="hint">请先进行语音识别，然后点击翻译按钮</p>

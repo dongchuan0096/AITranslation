@@ -37,15 +37,15 @@ function onFileChange(e: Event) {
   if (!files || files.length === 0) return;
   for (let i = 0; i < files.length; i += 1) {
     const file = files[i];
-    const reader = new FileReader();
+      const reader = new FileReader();
     reader.onload = ev => {
-      const base64 = ev.target?.result as string;
-      const pureBase64 = base64.replace(/^data:image\/\w+;base64,/, '');
-      thumbnails.value.push(base64);
-      images.value.push(pureBase64);
+        const base64 = ev.target?.result as string;
+        const pureBase64 = base64.replace(/^data:image\/\w+;base64,/, '');
+        thumbnails.value.push(base64);
+        images.value.push(pureBase64);
       translatedImages.value.push('');
       translatedTexts.value.push([]);
-    };
+      };
     reader.readAsDataURL(file);
   }
 }
@@ -90,13 +90,13 @@ async function handleTranslate(idx: number) {
         translatedTexts.value[idx] = [res.data.textbox_texts];
       } else {
         translatedTexts.value[idx] = [];
-      }
+}
     }
   } catch {
     errorMessage.value = '图片翻译失败';
   } finally {
     loading.value = false;
-  }
+}
 }
 
 async function translateOne(idx: number, img: string) {
@@ -136,11 +136,11 @@ async function translateAll() {
         return Promise.resolve();
       })
     );
-  } catch {
+    } catch {
     errorMessage.value = '批量翻译失败';
   } finally {
     loading.value = false;
-  }
+    }
 }
 
 function getModelParams(config: any) {
@@ -203,7 +203,7 @@ function getOtherParams(config: any) {
 function openPreview() {
   previewImageSrc.value = currentTranslatedImage.value;
   showPreview.value = true;
-}
+  }
 function closePreview() {
   console.log('closePreview called');
   showPreview.value = false;

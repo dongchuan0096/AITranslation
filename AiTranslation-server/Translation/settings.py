@@ -54,6 +54,8 @@ INSTALLED_APPS = [
     'corsheaders',  # 添加CORS支持
     "apps.api",
     "apps.login",
+    "apps.ai_assistant",
+    "apps.file_upload",  # 文件上传模块
 ]
 
 MIDDLEWARE = [
@@ -178,3 +180,16 @@ CORS_ALLOW_HEADERS = [
 # 允许的最大请求体（单位：字节），比如 100MB
 DATA_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024
 FILE_UPLOAD_MAX_MEMORY_SIZE = 100 * 1024 * 1024
+
+# OpenAI API配置
+OPENAI_API_KEY = "sk-da5ff127540d4c9cb8ff1bb1ae16f71d"  # 请替换为您的实际API Key
+OPENAI_MODEL = "gpt-3.5-turbo"  # 使用的模型名称
+
+# DeepSeek API配置
+DEEPSEEK_API_KEY = "sk-da5ff127540d4c9cb8ff1bb1ae16f71d"  # 请替换为您的DeepSeek API Key
+DEEPSEEK_MODEL = "deepseek-chat"  # DeepSeek模型名称
+DEEPSEEK_BASE_URL = "https://api.deepseek.com/v1"  # DeepSeek API基础URL
+
+# AI模型选择配置
+AI_MODEL_TYPE = "deepseek"  # 可选值: "openai" 或 "deepseek"
+

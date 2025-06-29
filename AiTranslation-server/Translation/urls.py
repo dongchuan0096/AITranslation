@@ -22,4 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('auth/', include('apps.login.urls')),
     path('api/', include('apps.api.urls')),
+    path('api/ai-assistant/', include('apps.ai_assistant.urls')),
+    path('api/file-upload/', include('apps.file_upload.urls')),
 ]

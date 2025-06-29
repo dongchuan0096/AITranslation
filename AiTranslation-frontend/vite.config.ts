@@ -1,9 +1,13 @@
 import process from 'node:process';
 import { URL, fileURLToPath } from 'node:url';
 import { defineConfig, loadEnv } from 'vite';
+import IconsResolver from 'unplugin-icons/resolver'
+// add the following dependencies
+import components from 'unplugin-vue-components/vite';
+import { AntDesignXVueResolver } from 'ant-design-x-vue/resolver';
+import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import { setupVitePlugins } from './build/plugins';
 import { createViteProxy, getBuildTime } from './build/config';
-
 export default defineConfig(configEnv => {
   const viteEnv = loadEnv(configEnv.mode, process.cwd()) as unknown as Env.ImportMeta;
 
@@ -19,6 +23,12 @@ export default defineConfig(configEnv => {
         '@': fileURLToPath(new URL('./src', import.meta.url))
       }
     },
+    plugins: [
+      components({
+        resolvers: [AntDesignXVueResolver(), NaiveUiResolver(), IconsResolver()]
+      }),
+      ...setupVitePlugins(viteEnv, buildTime)
+    ],
     css: {
       preprocessorOptions: {
         scss: {
@@ -27,7 +37,6 @@ export default defineConfig(configEnv => {
         }
       }
     },
-    plugins: setupVitePlugins(viteEnv, buildTime),
     define: {
       BUILD_TIME: JSON.stringify(buildTime)
     },

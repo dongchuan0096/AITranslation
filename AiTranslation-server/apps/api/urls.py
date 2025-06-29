@@ -6,7 +6,11 @@ from .views import (
     SpeechRecognitionInfoView,
     APIAccessLogView,
     APIUsageStatisticsView,
-    ImageTranslateProxyView
+    ImageTranslateProxyView,
+    FileUploadView,
+    FileUploadInfoView,
+    FileUploadListView,
+    FileUploadDeleteView
 )
 
 urlpatterns = [
@@ -17,4 +21,9 @@ urlpatterns = [
     path('speech-recognition-info/', SpeechRecognitionInfoView.as_view(), name='speech_recognition_info'),
     path('access-logs/', APIAccessLogView.as_view(), name='api_access_logs'),
     path('usage-statistics/', APIUsageStatisticsView.as_view(), name='api_usage_statistics'),
+    # 文件上传相关接口
+    path('file-upload/', FileUploadView.as_view(), name='file_upload'),
+    path('file-upload-info/', FileUploadInfoView.as_view(), name='file_upload_info'),
+    path('file-upload-list/', FileUploadListView.as_view(), name='file_upload_list'),
+    path('file-upload-delete/<int:file_id>/', FileUploadDeleteView.as_view(), name='file_upload_delete'),
 ]    

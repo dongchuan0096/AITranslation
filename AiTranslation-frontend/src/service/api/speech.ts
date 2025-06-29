@@ -100,3 +100,4 @@ export interface SpeechRecognitionInfo {
   max_duration: number; // 最大音频时长（秒）
   service_status: string; // 服务状态
 }
+ 

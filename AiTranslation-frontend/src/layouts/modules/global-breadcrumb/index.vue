@@ -5,6 +5,7 @@ import { useThemeStore } from '@/store/modules/theme';
 import { useRouteStore } from '@/store/modules/route';
 import { useRouterPush } from '@/hooks/common/router';
 
+
 defineOptions({
   name: 'GlobalBreadcrumb'
 });
