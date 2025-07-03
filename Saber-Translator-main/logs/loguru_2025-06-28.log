@@ -1,0 +1,6 @@
+2025-06-28 14:13:29.917 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-28 14:13:30.876 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-28 14:13:31.846 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-28 14:13:48.040 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-28 14:13:48.750 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-28 14:13:49.402 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready

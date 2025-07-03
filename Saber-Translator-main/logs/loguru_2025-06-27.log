@@ -1,0 +1,21 @@
+2025-06-27 09:00:17.693 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:00:18.472 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:00:19.495 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:00:36.061 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:00:36.861 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:00:37.545 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:36:29.113 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:36:29.814 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:36:30.515 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:37:04.182 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:37:04.888 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:37:05.594 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:37:18.546 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:37:19.289 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:37:20.081 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:38:47.914 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:38:48.642 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:38:49.339 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-27 09:39:21.473 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-27 09:39:22.158 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-27 09:39:22.856 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready

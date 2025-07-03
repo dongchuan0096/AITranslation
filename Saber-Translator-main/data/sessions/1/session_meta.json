@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "name": 1,
+    "saved_at": "2025-06-26 10:11:27",
+    "translator_version": "2.1.3+"
+  },
+  "ui_settings": {
+    "sourceLanguage": "japan",
+    "fontSize": "25",
+    "autoFontSize": false,
+    "fontFamily": "fonts/msyh.ttc",
+    "layoutDirection": "vertical",
+    "textColor": "#231816",
+    "rotationAngle": 0,
+    "modelProvider": "deepseek",
+    "modelName": "deepseek-chat",
+    "promptContent": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。",
+    "enableTextboxPrompt": false,
+    "textboxPromptContent": "你是一个专业的外语老师。请将我提供的非中文内容连成一句或几句话并翻译成中文。同时要告诉我为什么这么翻译，这句话有哪些知识点。",
+    "useInpaintingMethod": "false",
+    "fillColor": "#ffffff",
+    "inpaintingStrength": 1,
+    "blendEdges": true,
+    "rpmLimitTranslation": 0,
+    "rpmLimitAiVisionOcr": 0,
+    "enableTextStroke": true,
+    "textStrokeColor": "#ffffff",
+    "textStrokeWidth": 3
+  },
+  "images_meta": [
+    {
+      "_lama_inpainted": false,
+      "autoFontSize": false,
+      "bubbleCoords": [],
+      "bubbleSettings": null,
+      "bubbleTexts": [],
+      "enableTextStroke": true,
+      "fileName": "before1.png",
+      "fillColor": "#ffffff",
+      "fontFamily": "fonts/msyh.ttc",
+      "fontSize": "25",
+      "hasUnsavedChanges": false,
+      "layoutDirection": "vertical",
+      "originalTexts": [],
+      "originalUseInpainting": false,
+      "originalUseLama": false,
+      "savedManualCoords": null,
+      "showOriginal": false,
+      "textColor": "#231816",
+      "textStrokeColor": "#ffffff",
+      "textStrokeWidth": 3,
+      "textboxTexts": [],
+      "translationFailed": false,
+      "hasOriginalData": true,
+      "hasTranslatedData": true,
+      "hasCleanData": false
+    }
+  ],
+  "currentImageIndex": 0
+}

@@ -1,0 +1,696 @@
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 09:00:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:17 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 09:00:17 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 09:00:17 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 09:00:17 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 09:00:17 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 09:00:17 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 09:00:17 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 09:00:24 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:24 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 09:00:24 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 09:00:24 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:24 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:25 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 09:00:25 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 09:00:25 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 09:00:25 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 09:00:25 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 09:00:25 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 09:00:27 - MangaOCRInterface - [32mINFO[0m - [32mMangaOCR 实例初始化成功。耗时: 2.09 秒[0m
+2025-07-03 09:00:27 - MangaOCRInterface - [32mINFO[0m - [32m✅ MangaOCR 模型预加载成功，可以立即使用。[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 09:00:38 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:38 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:38 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:38 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 09:00:38 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 09:00:38 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 09:00:38 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 09:00:38 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 09:00:38 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 09:00:38 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 09:00:42 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:42 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 09:00:43 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 09:00:43 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:43 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:00:43 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 09:00:43 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 09:00:43 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 09:00:43 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 09:00:43 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 09:00:43 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 09:00:44 - MangaOCRInterface - [32mINFO[0m - [32mMangaOCR 实例初始化成功。耗时: 1.63 秒[0m
+2025-07-03 09:00:44 - MangaOCRInterface - [32mINFO[0m - [32m✅ MangaOCR 模型预加载成功，可以立即使用。[0m
+2025-07-03 09:05:05 - TextTranslateAPI - [32mINFO[0m - [32m开始调用translate_single_text函数进行翻译... JSON模式: False, 自定义BaseURL: 无, rpm: 0[0m
+2025-07-03 09:05:05 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'In today’s fast-paced digital ...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:05:14 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'In today’s fast-paced digital ...' -> '{
+"detected": "en",
+"translati...'[0m
+2025-07-03 09:05:14 - TextTranslateAPI - [33mWARNING[0m - [33m保存模型历史时出错: save_model_info_api() takes 0 positional arguments but 2 were given[0m
+2025-07-03 09:05:59 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\prompts.json[0m
+2025-07-03 09:05:59 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\prompts.json[0m
+2025-07-03 09:05:59 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-03 09:05:59 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-03 09:05:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:05:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:06:00 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:06:00 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\prompts.json[0m
+2025-07-03 09:06:00 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\prompts.json[0m
+2025-07-03 09:06:00 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-03 09:06:00 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-03 09:06:00 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-03 09:06:00 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\prompts.json[0m
+2025-07-03 09:06:00 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "NotoSans-Medium.ttf", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#930000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#4CB07BFF", "text_color": "#000000FF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: NotoSans-Medium.ttf, 字号: 20[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#930000FF, width=5[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-03 09:44:04 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:04 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: NotoSans-Medium.ttf, 修正后: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-03 09:44:04 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-03 09:44:04 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-03 09:44:04 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-03 09:44:04 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-03 09:44:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:05 - YOLOv12Interface - [32mINFO[0m - [32m开始加载 YOLOv12 本地模型: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\weights\best.pt[0m
+2025-07-03 09:44:05 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 本地模型加载成功[0m
+2025-07-03 09:44:06 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 检测到 8 个候选框 (阈值: 0.6)[0m
+2025-07-03 09:44:06 - CoreDetection - [32mINFO[0m - [32m检测到 8 个气泡候选框。[0m
+2025-07-03 09:44:06 - CoreDetection - [32mINFO[0m - [32m最终获取并排序了 8 个有效气泡坐标。[0m
+2025-07-03 09:44:06 - CoreProcessing - [32mINFO[0m - [32m气泡检测完成，找到 8 个气泡 (耗时: 1.08s)[0m
+2025-07-03 09:44:06 - CoreProcessing - [32mINFO[0m - [32m步骤 2: OCR 识别文本...[0m
+2025-07-03 09:44:06 - CoreOCR - [32mINFO[0m - [32m开始使用 MangaOCR 逐个识别 8 个气泡...[0m
+2025-07-03 09:44:06 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:07 - CoreOCR - [32mINFO[0m - [32m气泡 0 识别文本: '：けどなんだコレ風邪って感じでもなさそうだし'[0m
+2025-07-03 09:44:07 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:07 - CoreOCR - [32mINFO[0m - [32m气泡 1 识别文本: 'まさか薬の副作用じゃないだろうな．．．'[0m
+2025-07-03 09:44:07 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:08 - CoreOCR - [32mINFO[0m - [32m气泡 2 识别文本: '良かったぁ．．．'[0m
+2025-07-03 09:44:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:08 - CoreOCR - [32mINFO[0m - [32m气泡 3 识别文本: '女の子になってから一ヶ月近く経っていまさら．．．'[0m
+2025-07-03 09:44:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:08 - CoreOCR - [32mINFO[0m - [32m气泡 4 识别文本: '一ヶ月．．．'[0m
+2025-07-03 09:44:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:09 - CoreOCR - [32mINFO[0m - [32m气泡 5 识别文本: '安全性は十分に検証してたし'[0m
+2025-07-03 09:44:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:09 - CoreOCR - [32mINFO[0m - [32m气泡 6 识别文本: 'おいおい泣くなよ．．．'[0m
+2025-07-03 09:44:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:09 - CoreOCR - [32mINFO[0m - [32m气泡 7 识别文本: 'うーん．．．'[0m
+2025-07-03 09:44:09 - CoreOCR - [32mINFO[0m - [32mMangaOCR 识别完成。[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32mOCR 完成 (耗时: 3.47s)[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32mBEFORE_TRANSLATION 钩子修改了文本或参数。[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m步骤 3: 翻译文本...[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m翻译模型: deepseek, 模型名称: deepseek-chat[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本数量: 8[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 0: '：けどなんだコレ風邪って感じでもなさそうだし'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 1: 'まさか薬の副作用じゃないだろうな．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 2: '良かったぁ．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 3: '女の子になってから一ヶ月近く経っていまさら．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 4: '一ヶ月．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 5: '安全性は十分に検証してたし'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 6: 'おいおい泣くなよ．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 7: 'うーん．．．'[0m
+2025-07-03 09:44:09 - CoreProcessing - [32mINFO[0m - [32m调用 translate_text_list 开始 - 模型: deepseek, 模型名: deepseek-chat, API密钥长度: 35, 自定义BaseURL: 无[0m
+2025-07-03 09:44:09 - CoreTranslation - [32mINFO[0m - [32m开始批量翻译 8 个文本片段 (使用 deepseek, rpm: 无)...[0m
+2025-07-03 09:44:09 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '：けどなんだコレ風邪って感じでもなさそうだし...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:24 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '：けどなんだコレ風邪って感じでもなさそうだし...' -> '但这到底是什么，感觉也不像是感冒。...'[0m
+2025-07-03 09:44:24 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'まさか薬の副作用じゃないだろうな．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:28 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'まさか薬の副作用じゃないだろうな．．．...' -> '该不会是药物的副作用吧......'[0m
+2025-07-03 09:44:28 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '良かったぁ．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:31 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '良かったぁ．．．...' -> '太好了......'[0m
+2025-07-03 09:44:31 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '女の子になってから一ヶ月近く経っていまさら．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:36 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '女の子になってから一ヶ月近く経っていまさら．．．...' -> '变成女孩子已经快一个月了，事到如今……...'[0m
+2025-07-03 09:44:36 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '一ヶ月．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:48 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '一ヶ月．．．...' -> '一个月……...'[0m
+2025-07-03 09:44:48 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '安全性は十分に検証してたし...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:52 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '安全性は十分に検証してたし...' -> '安全性已经充分验证过。...'[0m
+2025-07-03 09:44:52 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'おいおい泣くなよ．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:55 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'おいおい泣くなよ．．．...' -> '喂喂，别哭啊......'[0m
+2025-07-03 09:44:55 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'うーん．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:44:59 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'うーん．．．...' -> '嗯......'[0m
+2025-07-03 09:44:59 - CoreTranslation - [32mINFO[0m - [32m批量翻译完成。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32mtranslate_text_list 调用完成，返回结果数量: 8[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m翻译结果:[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 0 翻译结果: '但这到底是什么，感觉也不像是感冒。'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 1 翻译结果: '该不会是药物的副作用吧...'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 2 翻译结果: '太好了...'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 3 翻译结果: '变成女孩子已经快一个月了，事到如今……'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 4 翻译结果: '一个月……'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 5 翻译结果: '安全性已经充分验证过。'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 6 翻译结果: '喂喂，别哭啊...'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本 7 翻译结果: '嗯...'[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m翻译完成 (耗时: 49.60s)[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32mAFTER_TRANSLATION 钩子修改了翻译结果。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m步骤 4: 修复/填充背景 (方法: solid)...[0m
+2025-07-03 09:44:59 - CoreInpainting - [32mINFO[0m - [32m创建气泡掩码，图像大小：(2200, 1700, 3), 气泡数量：8[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreInpainting - [32mINFO[0m - [32m执行纯色填充，颜色: #4CB07BFF[0m
+2025-07-03 09:44:59 - CoreInpainting - [32mINFO[0m - [32m纯色填充完成，已生成对应的'干净'背景。[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m背景处理完成 (耗时: 0.57s)[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32mAFTER_INPAINTING 钩子修改了图像。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32mBEFORE_RENDERING 钩子修改了渲染参数。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m步骤 5: 渲染翻译文本...[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m开始渲染 8 个气泡的文本...[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 36)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 48)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 54)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 57)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 59)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 58)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 57px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 59px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:44:59 - CoreRendering - [32mINFO[0m - [32m所有气泡文本渲染完成。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m文本渲染完成 (耗时: 0.04s)[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32mAFTER_PROCESSING 钩子修改了最终结果。[0m
+2025-07-03 09:44:59 - CoreProcessing - [32mINFO[0m - [32m图像翻译流程完成，总耗时: 54.84s[0m
+2025-07-03 09:45:00 - TranslateAPI - [32mINFO[0m - [32m返回参数 keys: ['translated_image', 'clean_image', 'original_texts', 'bubble_texts', 'textbox_texts', 'bubble_coords'][0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "msyhbd.ttc", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#930000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#4CB07BFF", "text_color": "#000000FF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: msyhbd.ttc, 字号: 20[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#930000FF, width=5[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-03 09:46:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: msyhbd.ttc, 修正后: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-03 09:46:08 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-03 09:46:08 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-03 09:46:08 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-03 09:46:08 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-03 09:46:08 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 检测到 7 个候选框 (阈值: 0.6)[0m
+2025-07-03 09:46:08 - CoreDetection - [32mINFO[0m - [32m检测到 7 个气泡候选框。[0m
+2025-07-03 09:46:08 - CoreDetection - [32mINFO[0m - [32m最终获取并排序了 7 个有效气泡坐标。[0m
+2025-07-03 09:46:08 - CoreProcessing - [32mINFO[0m - [32m气泡检测完成，找到 7 个气泡 (耗时: 0.26s)[0m
+2025-07-03 09:46:08 - CoreProcessing - [32mINFO[0m - [32m步骤 2: OCR 识别文本...[0m
+2025-07-03 09:46:08 - CoreOCR - [32mINFO[0m - [32m开始使用 MangaOCR 逐个识别 7 个气泡...[0m
+2025-07-03 09:46:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:08 - CoreOCR - [32mINFO[0m - [32m气泡 0 识别文本: '気分まで悪くなってきたような．．．'[0m
+2025-07-03 09:46:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:09 - CoreOCR - [32mINFO[0m - [32m气泡 1 识别文本: 'だいぶマシになったかも．．．'[0m
+2025-07-03 09:46:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:09 - CoreOCR - [32mINFO[0m - [32m气泡 2 识别文本: '．．．．．．はぁ．．：・'[0m
+2025-07-03 09:46:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:09 - CoreOCR - [32mINFO[0m - [32m气泡 3 识别文本: 'いや．．．これ．．．なんか．．．．．'[0m
+2025-07-03 09:46:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:10 - CoreOCR - [32mINFO[0m - [32m气泡 4 识别文本: 'あ兄ちゃん！？'[0m
+2025-07-03 09:46:10 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:10 - CoreOCR - [32mINFO[0m - [32m气泡 5 识别文本: 'へ．．．ちょっと．．．？'[0m
+2025-07-03 09:46:10 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:10 - CoreOCR - [32mINFO[0m - [32m气泡 6 识别文本: 'う．．．うぅ．．．．．'[0m
+2025-07-03 09:46:10 - CoreOCR - [32mINFO[0m - [32mMangaOCR 识别完成。[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32mOCR 完成 (耗时: 2.08s)[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32mBEFORE_TRANSLATION 钩子修改了文本或参数。[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m步骤 3: 翻译文本...[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m翻译模型: deepseek, 模型名称: deepseek-chat[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本数量: 7[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 0: '気分まで悪くなってきたような．．．'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 1: 'だいぶマシになったかも．．．'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 2: '．．．．．．はぁ．．：・'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 3: 'いや．．．これ．．．なんか．．．．．'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 4: 'あ兄ちゃん！？'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 5: 'へ．．．ちょっと．．．？'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 6: 'う．．．うぅ．．．．．'[0m
+2025-07-03 09:46:10 - CoreProcessing - [32mINFO[0m - [32m调用 translate_text_list 开始 - 模型: deepseek, 模型名: deepseek-chat, API密钥长度: 35, 自定义BaseURL: 无[0m
+2025-07-03 09:46:10 - CoreTranslation - [32mINFO[0m - [32m开始批量翻译 7 个文本片段 (使用 deepseek, rpm: 无)...[0m
+2025-07-03 09:46:10 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '気分まで悪くなってきたような．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:25 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '気分まで悪くなってきたような．．．...' -> '感觉连心情都变差了......'[0m
+2025-07-03 09:46:25 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'だいぶマシになったかも．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:28 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'だいぶマシになったかも．．．...' -> '可能已经好多了......'[0m
+2025-07-03 09:46:28 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '．．．．．．はぁ．．：・...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:31 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '．．．．．．はぁ．．：・...' -> '唉……...'[0m
+2025-07-03 09:46:31 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'いや．．．これ．．．なんか．．．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:36 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'いや．．．これ．．．なんか．．．．．...' -> '不...这个...有点......'[0m
+2025-07-03 09:46:36 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'あ兄ちゃん！？...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:39 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'あ兄ちゃん！？...' -> '哥哥！？...'[0m
+2025-07-03 09:46:39 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'へ．．．ちょっと．．．？...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:43 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'へ．．．ちょっと．．．？...' -> '喂……等一下……？...'[0m
+2025-07-03 09:46:43 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'う．．．うぅ．．．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 09:46:46 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'う．．．うぅ．．．．．...' -> '呜...呜呜......'[0m
+2025-07-03 09:46:46 - CoreTranslation - [32mINFO[0m - [32m批量翻译完成。[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32mtranslate_text_list 调用完成，返回结果数量: 7[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m翻译结果:[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 0 翻译结果: '感觉连心情都变差了...'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 1 翻译结果: '可能已经好多了...'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 2 翻译结果: '唉……'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 3 翻译结果: '不...这个...有点...'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 4 翻译结果: '哥哥！？'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 5 翻译结果: '喂……等一下……？'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m文本 6 翻译结果: '呜...呜呜...'[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m翻译完成 (耗时: 36.32s)[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32mAFTER_TRANSLATION 钩子修改了翻译结果。[0m
+2025-07-03 09:46:46 - CoreProcessing - [32mINFO[0m - [32m步骤 4: 修复/填充背景 (方法: solid)...[0m
+2025-07-03 09:46:46 - CoreInpainting - [32mINFO[0m - [32m创建气泡掩码，图像大小：(2200, 1700, 3), 气泡数量：7[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreInpainting - [32mINFO[0m - [32m执行纯色填充，颜色: #4CB07BFF[0m
+2025-07-03 09:46:47 - CoreInpainting - [32mINFO[0m - [32m纯色填充完成，已生成对应的'干净'背景。[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32m背景处理完成 (耗时: 0.57s)[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32mAFTER_INPAINTING 钩子修改了图像。[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32mBEFORE_RENDERING 钩子修改了渲染参数。[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32m步骤 5: 渲染翻译文本...[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m开始渲染 7 个气泡的文本...[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 36)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 48)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 54)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 57)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 59)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 60)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 55)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 56)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 55px (范围: 12-60)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 51)[0m
+2025-07-03 09:46:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 52)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 51px (范围: 12-60)[0m
+2025-07-03 09:46:47 - CoreRendering - [32mINFO[0m - [32m所有气泡文本渲染完成。[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32m文本渲染完成 (耗时: 0.06s)[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32mAFTER_PROCESSING 钩子修改了最终结果。[0m
+2025-07-03 09:46:47 - CoreProcessing - [32mINFO[0m - [32m图像翻译流程完成，总耗时: 39.33s[0m
+2025-07-03 09:46:47 - TranslateAPI - [32mINFO[0m - [32m返回参数 keys: ['translated_image', 'clean_image', 'original_texts', 'bubble_texts', 'textbox_texts', 'bubble_coords'][0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 10:03:57 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:03:57 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:03:57 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:03:57 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 10:03:57 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 10:03:57 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 10:03:57 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 10:03:57 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 10:03:57 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 10:03:57 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 10:04:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:05 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 10:04:05 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 10:04:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:05 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 10:04:05 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 10:04:05 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 10:04:05 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 10:04:05 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 10:04:05 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 10:04:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:08 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 10:04:08 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 10:04:08 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 10:04:08 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 10:04:08 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 10:04:08 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 10:04:08 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 10:04:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:13 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 10:04:13 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 10:04:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:04:13 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 10:04:13 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 10:04:13 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 10:04:13 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 10:04:13 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 10:04:13 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 10:04:15 - MangaOCRInterface - [32mINFO[0m - [32mMangaOCR 实例初始化成功。耗时: 1.88 秒[0m
+2025-07-03 10:04:15 - MangaOCRInterface - [32mINFO[0m - [32m✅ MangaOCR 模型预加载成功，可以立即使用。[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "msyhbd.ttc", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#930000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#4CB07BFF", "text_color": "#000000FF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: msyhbd.ttc, 字号: 20[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#930000FF, width=5[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-03 10:13:14 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:14 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: msyhbd.ttc, 修正后: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-03 10:13:14 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-03 10:13:14 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-03 10:13:14 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-03 10:13:14 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-03 10:13:14 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:14 - YOLOv12Interface - [32mINFO[0m - [32m开始加载 YOLOv12 本地模型: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\weights\best.pt[0m
+2025-07-03 10:13:14 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 本地模型加载成功[0m
+2025-07-03 10:13:15 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 检测到 9 个候选框 (阈值: 0.6)[0m
+2025-07-03 10:13:15 - CoreDetection - [32mINFO[0m - [32m检测到 9 个气泡候选框。[0m
+2025-07-03 10:13:15 - CoreDetection - [32mINFO[0m - [32m最终获取并排序了 9 个有效气泡坐标。[0m
+2025-07-03 10:13:15 - CoreProcessing - [32mINFO[0m - [32m气泡检测完成，找到 9 个气泡 (耗时: 0.84s)[0m
+2025-07-03 10:13:15 - CoreProcessing - [32mINFO[0m - [32m步骤 2: OCR 识别文本...[0m
+2025-07-03 10:13:15 - CoreOCR - [32mINFO[0m - [32m开始使用 MangaOCR 逐个识别 9 个气泡...[0m
+2025-07-03 10:13:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:16 - CoreOCR - [32mINFO[0m - [32m气泡 0 识别文本: '今日から入った新メンバーのケロリさん．．．ヤな奴だなおい'[0m
+2025-07-03 10:13:16 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:17 - CoreOCR - [32mINFO[0m - [32m气泡 1 识别文本: 'いやいや．．．どうせ男でしょ'[0m
+2025-07-03 10:13:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:17 - CoreOCR - [32mINFO[0m - [32m气泡 2 识别文本: '何故なら今は――'[0m
+2025-07-03 10:13:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:17 - CoreOCR - [32mINFO[0m - [32m气泡 3 识别文本: 'それは禁句だろ．．．'[0m
+2025-07-03 10:13:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:17 - CoreOCR - [32mINFO[0m - [32m气泡 4 识别文本: '喋り方がいかにもだよな'[0m
+2025-07-03 10:13:17 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:18 - CoreOCR - [32mINFO[0m - [32m气泡 5 识别文本: '．．．だが残念オレは違うぞ'[0m
+2025-07-03 10:13:18 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:18 - CoreOCR - [32mINFO[0m - [32m气泡 6 识别文本: '可愛い子は大抵オッサンだ．．．'[0m
+2025-07-03 10:13:18 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:18 - CoreOCR - [32mINFO[0m - [32m气泡 7 识别文本: 'ただの丁寧語だよ！！'[0m
+2025-07-03 10:13:18 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:13:19 - CoreOCR - [32mINFO[0m - [32m气泡 8 识别文本: 'お．．．お前．．．．．'[0m
+2025-07-03 10:13:19 - CoreOCR - [32mINFO[0m - [32mMangaOCR 识别完成。[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32mOCR 完成 (耗时: 3.54s)[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32mBEFORE_TRANSLATION 钩子修改了文本或参数。[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m步骤 3: 翻译文本...[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m翻译模型: deepseek, 模型名称: deepseek-chat[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本数量: 9[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 0: '今日から入った新メンバーのケロリさん．．．ヤな奴だなおい'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 1: 'いやいや．．．どうせ男でしょ'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 2: '何故なら今は――'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 3: 'それは禁句だろ．．．'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 4: '喋り方がいかにもだよな'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 5: '．．．だが残念オレは違うぞ'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 6: '可愛い子は大抵オッサンだ．．．'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 7: 'ただの丁寧語だよ！！'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m待翻译文本 8: 'お．．．お前．．．．．'[0m
+2025-07-03 10:13:19 - CoreProcessing - [32mINFO[0m - [32m调用 translate_text_list 开始 - 模型: deepseek, 模型名: deepseek-chat, API密钥长度: 35, 自定义BaseURL: 无[0m
+2025-07-03 10:13:19 - CoreTranslation - [32mINFO[0m - [32m开始批量翻译 9 个文本片段 (使用 deepseek, rpm: 无)...[0m
+2025-07-03 10:13:19 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '今日から入った新メンバーのケロリさん．．．ヤな奴だなおい...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:23 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '今日から入った新メンバーのケロリさん．．．ヤな奴だなおい...' -> '今天加入的新成员Kerori...真是个讨厌的家伙啊...'[0m
+2025-07-03 10:13:23 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'いやいや．．．どうせ男でしょ...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:27 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'いやいや．．．どうせ男でしょ...' -> '不不...反正是个男的吧...'[0m
+2025-07-03 10:13:27 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '何故なら今は――...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:30 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '何故なら今は――...' -> '因为现在——...'[0m
+2025-07-03 10:13:30 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'それは禁句だろ．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:44 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'それは禁句だろ．．．...' -> '那是禁忌吧......'[0m
+2025-07-03 10:13:44 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '喋り方がいかにもだよな...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:48 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '喋り方がいかにもだよな...' -> '说话方式真是让人受不了啊。...'[0m
+2025-07-03 10:13:48 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '．．．だが残念オレは違うぞ...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:13:52 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '．．．だが残念オレは違うぞ...' -> '可惜我和他们不一样...'[0m
+2025-07-03 10:13:52 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: '可愛い子は大抵オッサンだ．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:14:07 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: '可愛い子は大抵オッサンだ．．．...' -> '可爱的小家伙大多是大叔......'[0m
+2025-07-03 10:14:07 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'ただの丁寧語だよ！！...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:14:10 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'ただの丁寧語だよ！！...' -> '只是普通的敬语而已！！...'[0m
+2025-07-03 10:14:10 - CoreTranslation - [32mINFO[0m - [32m开始翻译文本: 'お．．．お前．．．．．...' (服务商: deepseek, rpm: 无)[0m
+2025-07-03 10:14:14 - CoreTranslation - [32mINFO[0m - [32m最终翻译成功: 'お．．．お前．．．．．...' -> '你...你这家伙......'[0m
+2025-07-03 10:14:14 - CoreTranslation - [32mINFO[0m - [32m批量翻译完成。[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32mtranslate_text_list 调用完成，返回结果数量: 9[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m翻译结果:[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 0 翻译结果: '今天加入的新成员Kerori...真是个讨厌的家伙啊'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 1 翻译结果: '不不...反正是个男的吧'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 2 翻译结果: '因为现在——'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 3 翻译结果: '那是禁忌吧...'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 4 翻译结果: '说话方式真是让人受不了啊。'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 5 翻译结果: '可惜我和他们不一样'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 6 翻译结果: '可爱的小家伙大多是大叔...'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 7 翻译结果: '只是普通的敬语而已！！'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m文本 8 翻译结果: '你...你这家伙...'[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m翻译完成 (耗时: 55.46s)[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32mAFTER_TRANSLATION 钩子修改了翻译结果。[0m
+2025-07-03 10:14:14 - CoreProcessing - [32mINFO[0m - [32m步骤 4: 修复/填充背景 (方法: solid)...[0m
+2025-07-03 10:14:14 - CoreInpainting - [32mINFO[0m - [32m创建气泡掩码，图像大小：(2200, 1700, 3), 气泡数量：9[0m
+2025-07-03 10:14:14 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:14 - CoreInpainting - [32mINFO[0m - [32m执行纯色填充，颜色: #4CB07BFF[0m
+2025-07-03 10:14:14 - CoreInpainting - [32mINFO[0m - [32m纯色填充完成，已生成对应的'干净'背景。[0m
+2025-07-03 10:14:14 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32m背景处理完成 (耗时: 0.53s)[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32mAFTER_INPAINTING 钩子修改了图像。[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32mBEFORE_RENDERING 钩子修改了渲染参数。[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32m步骤 5: 渲染翻译文本...[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m开始渲染 9 个气泡的文本...[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 36)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 48)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 54)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 57)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 55)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 56)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 56px (范围: 12-60)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 59)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 60px (范围: 12-60)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\msyhbd.ttc (大小: 58)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 57px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 54px (范围: 12-60)[0m
+2025-07-03 10:14:15 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 54)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m自动计算的最佳字体大小: 54px (范围: 12-60)[0m
+2025-07-03 10:14:15 - CoreRendering - [32mINFO[0m - [32m所有气泡文本渲染完成。[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32m文本渲染完成 (耗时: 0.05s)[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32mAFTER_PROCESSING 钩子修改了最终结果。[0m
+2025-07-03 10:14:15 - CoreProcessing - [32mINFO[0m - [32m图像翻译流程完成，总耗时: 60.50s[0m
+2025-07-03 10:14:15 - TranslateAPI - [32mINFO[0m - [32m返回参数 keys: ['translated_image', 'clean_image', 'original_texts', 'bubble_texts', 'textbox_texts', 'bubble_coords'][0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 14:14:56 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:14:56 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:14:56 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:14:56 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 14:14:56 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 14:14:56 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 14:14:56 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 14:14:56 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 14:14:56 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 14:14:56 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 14:15:03 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:03 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 14:15:03 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 14:15:03 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:03 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:03 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 14:15:03 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 14:15:03 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 14:15:03 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 14:15:03 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 14:15:03 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-03 14:15:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:08 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:08 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\flask\\Saber-Translator\\Saber-Translator-main\\plugins'][0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src/plugins[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\plugins[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-03 14:15:08 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-03 14:15:08 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-03 14:15:08 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-03 14:15:08 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-03 14:15:08 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-03 14:15:08 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-03 14:15:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:13 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-03 14:15:13 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-03 14:15:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:13 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main[0m
+2025-07-03 14:15:13 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 14:15:13 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-03 14:15:13 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-03 14:15:13 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-03 14:15:13 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-03 14:15:13 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-03 14:15:15 - MangaOCRInterface - [32mINFO[0m - [32mMangaOCR 实例初始化成功。耗时: 1.93 秒[0m
+2025-07-03 14:15:15 - MangaOCRInterface - [32mINFO[0m - [32m✅ MangaOCR 模型预加载成功，可以立即使用。[0m

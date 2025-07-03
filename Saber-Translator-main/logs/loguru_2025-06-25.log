@@ -1,0 +1,154 @@
+2025-06-25 11:17:11.623 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\生产实习\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 11:17:11.624 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 11:17:53.182 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 11:17:54.685 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 12:01:19.254 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 12:01:19.257 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 12:01:33.023 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 12:01:33.993 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 13:51:45.690 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 13:51:45.690 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 13:51:48.538 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 13:51:49.100 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:03:25.299 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:03:25.299 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:03:29.264 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:03:29.785 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:13:20.977 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:13:20.977 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:13:24.981 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:13:25.482 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:15:41.963 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:15:41.967 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:15:46.987 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:15:47.614 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:27:47.509 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:27:47.511 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:27:51.146 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:27:51.655 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:29:34.932 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:29:34.942 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:29:49.848 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:29:50.675 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:36:45.158 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:36:45.168 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:36:48.846 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:36:49.378 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:39:06.377 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:39:06.379 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:39:10.995 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:39:11.574 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:40:23.485 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:40:23.495 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:40:27.192 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:40:27.706 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 14:51:57.131 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 14:51:57.131 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 14:52:12.748 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 14:52:13.432 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 15:07:48.478 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 15:07:48.482 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 15:07:51.513 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 15:07:52.198 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:18:03.964 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:18:03.964 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:18:19.458 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:18:20.702 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:41:02.665 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:41:02.665 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:41:05.711 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:41:06.394 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:46:30.620 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:46:30.623 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:46:45.408 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:46:46.225 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:48:51.262 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:48:51.262 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:48:55.453 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:48:56.226 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:51:24.142 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:51:24.142 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:51:28.676 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:51:29.357 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:53:15.322 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:53:15.322 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:53:19.504 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:53:20.192 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:57:02.568 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:57:02.574 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:57:06.235 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:57:06.850 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:58:56.811 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:58:56.815 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 17:59:01.659 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 17:59:02.359 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 17:59:03.248 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 17:59:03.252 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:15:41.515 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:15:41.515 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:17:39.867 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:17:39.867 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:20:23.440 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:20:23.440 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:21:43.353 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:21:43.355 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:40:06.135 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:40:06.138 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:40:25.391 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:40:25.395 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:42:07.407 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:42:07.410 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:42:27.143 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:42:27.147 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:42:46.971 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:42:46.971 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:43:00.907 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 18:43:01.846 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 18:43:16.559 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:43:16.559 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:44:06.659 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:44:06.662 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:58:17.644 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:58:17.644 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:58:47.999 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:58:48.004 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:59:31.586 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:59:31.586 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 18:59:40.287 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 18:59:40.287 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:00:18.182 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:00:18.185 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:01:58.097 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:01:58.100 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:05:22.162 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:05:22.165 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:05:34.021 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:05:34.025 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:06:55.592 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:06:55.597 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:07:32.118 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:07:32.118 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:08:42.958 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:08:42.961 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:08:55.938 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:08:55.938 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:10:08.883 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:10:08.886 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:10:17.753 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:10:17.756 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:34:16.475 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:34:16.475 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:34:30.590 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:34:30.600 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 19:35:11.534 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 19:35:11.534 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 23:33:35.880 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 23:33:35.885 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 23:55:47.049 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 23:55:47.053 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 23:56:23.573 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 23:56:23.573 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base
+2025-06-25 23:56:41.265 | INFO     | manga_ocr.ocr:__init__:22 - Using CUDA
+2025-06-25 23:56:42.093 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-06-25 23:56:53.086 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\shixi\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-06-25 23:56:53.091 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from kha-white/manga-ocr-base

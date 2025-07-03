@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>语音翻译 - Saber-Translator</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        #voiceText { width: 60%; min-height: 80px; margin-bottom: 10px; }
+        #result { margin-top: 20px; font-size: 1.2em; color: #333; }
+        .input-row { margin-bottom: 10px; }
+        #voiceStatus { color: #007bff; margin-left: 10px; }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/langdetect@1.1.0/langdetect.min.js"></script>
+</head>
+<body>
+    <h2>语音输入翻译</h2>
+    <div class="input-row">
+        <button id="voiceBtn">🎤 开始语音输入</button>
+        <span id="voiceStatus"></span>
+    </div>
+    <div class="input-row">
+        <label>识别内容：</label><br>
+        <textarea id="voiceText" placeholder="语音识别内容会显示在这里"></textarea>
+    </div>
+    <div class="input-row">
+        <label>自动识别语言：</label>
+        <span id="detectedLang" style="font-weight:bold; color:#007bff;">-</span>
+    </div>
+    <div class="input-row">
+        <label>目标语言：</label>
+        <select id="targetLang">
+            <option value="zh">中文</option>
+            <option value="en">英文</option>
+            <option value="ja">日文</option>
+            <option value="ko">韩文</option>
+        </select>
+    </div>
+    <div class="input-row">
+        <label>服务商：</label>
+        <input id="modelProvider" value="deepseek" />
+        <label>模型名：</label>
+        <input id="modelName" value="deepseek-chat" placeholder="如 silicon-llava2-34b" />
+        <label>API Key：</label>
+        <input id="apiKey" value="" placeholder="你的API KEY" />
+    </div>
+    <div id="result"></div>
+    <script>
+        function langCodeToName(code) {
+            const map = {zh: '中文', en: '英文', ja: '日文', ko: '韩文'};
+            return map[code] || code;
+        }
+        async function detectAndTranslate() {
+            const text = document.getElementById('voiceText').value.trim();
+            const target_language = document.getElementById('targetLang').value;
+            const model_provider = document.getElementById('modelProvider').value;
+            const api_key = document.getElementById('apiKey').value;
+            const model_name = document.getElementById('modelName').value;
+            if (!text) {
+                document.getElementById('detectedLang').innerText = '-';
+                document.getElementById('result').innerText = '';
+                return;
+            }
+            let detected = 'unknown';
+            try {
+                detected = langdetect.detectOne(text);
+            } catch(e) {}
+            document.getElementById('detectedLang').innerText = langCodeToName(detected);
+            if (detected === target_language) {
+                document.getElementById('result').innerText = '源语言和目标语言相同，无需翻译。';
+                return;
+            }
+            document.getElementById('result').innerText = '翻译中...';
+            const res = await fetch('/api/translate_single_text', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    original_text: text,
+                    target_language,
+                    model_provider,
+                    api_key,
+                    model_name,
+                    source_language: detected
+                })
+            });
+            const data = await res.json();
+            document.getElementById('result').innerText = data.translated_text || data.error || '翻译失败';
+        }
+        document.getElementById('voiceText').addEventListener('input', function() {
+            detectAndTranslate();
+        });
+        document.getElementById('targetLang').addEventListener('change', function() {
+            detectAndTranslate();
+        });
+        // 语音识别功能
+        let recognition = null;
+        let recognizing = false;
+        if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+            const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+            recognition = new SpeechRecognition();
+            recognition.lang = 'zh-CN'; // 可根据需要设置
+            recognition.continuous = false;
+            recognition.interimResults = false;
+            recognition.onstart = function() {
+                recognizing = true;
+                document.getElementById('voiceStatus').innerText = '正在聆听...';
+                document.getElementById('voiceBtn').disabled = true;
+            };
+            recognition.onend = function() {
+                recognizing = false;
+                document.getElementById('voiceStatus').innerText = '';
+                document.getElementById('voiceBtn').disabled = false;
+            };
+            recognition.onerror = function(e) {
+                recognizing = false;
+                document.getElementById('voiceStatus').innerText = '语音识别失败';
+                document.getElementById('voiceBtn').disabled = false;
+            };
+            recognition.onresult = function(event) {
+                let transcript = '';
+                for (let i = 0; i < event.results.length; ++i) {
+                    transcript += event.results[i][0].transcript;
+                }
+                document.getElementById('voiceText').value = transcript;
+                detectAndTranslate();
+            };
+            document.getElementById('voiceBtn').onclick = function() {
+                if (!recognizing) {
+                    recognition.start();
+                }
+            };
+        } else {
+            document.getElementById('voiceBtn').disabled = true;
+            document.getElementById('voiceStatus').innerText = '当前浏览器不支持语音识别';
+        }
+    </script>
+</body>
+</html> 

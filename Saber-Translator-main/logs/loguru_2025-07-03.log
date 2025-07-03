@@ -1,0 +1,15 @@
+2025-07-03 09:00:25.022 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 09:00:26.579 | INFO     | manga_ocr.ocr:__init__:28 - Using CPU
+2025-07-03 09:00:27.110 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-07-03 09:00:43.048 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 09:00:43.844 | INFO     | manga_ocr.ocr:__init__:28 - Using CPU
+2025-07-03 09:00:44.667 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-07-03 10:04:05.250 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 10:04:13.400 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 10:04:14.310 | INFO     | manga_ocr.ocr:__init__:28 - Using CPU
+2025-07-03 10:04:15.266 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
+2025-07-03 14:15:03.919 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 14:15:05.490 | INFO     | manga_ocr.ocr:__init__:28 - Using CPU
+2025-07-03 14:15:13.419 | INFO     | manga_ocr.ocr:__init__:16 - Loading OCR model from C:\Users\Administrator\Desktop\flask\Saber-Translator\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model
+2025-07-03 14:15:14.341 | INFO     | manga_ocr.ocr:__init__:28 - Using CPU
+2025-07-03 14:15:15.342 | INFO     | manga_ocr.ocr:__init__:35 - OCR ready
