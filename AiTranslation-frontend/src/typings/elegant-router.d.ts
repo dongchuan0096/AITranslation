@@ -97,6 +97,7 @@ declare module "@elegant-router/types" {
     "pro-naive_table": "/pro-naive/table";
     "pro-naive_table_remote": "/pro-naive/table/remote";
     "pro-naive_table_row-edit": "/pro-naive/table/row-edit";
+    "professionaltranslate": "/professionaltranslate";
     "translatecomic": "/translatecomic";
     "translatefile": "/translatefile";
     "translatetext": "/translatetext";
@@ -162,6 +163,7 @@ declare module "@elegant-router/types" {
     | "multi-menu"
     | "plugin"
     | "pro-naive"
+    | "professionaltranslate"
     | "translatecomic"
     | "translatefile"
     | "translatetext"
@@ -238,6 +240,7 @@ declare module "@elegant-router/types" {
     | "pro-naive_form_step"
     | "pro-naive_table_remote"
     | "pro-naive_table_row-edit"
+    | "professionaltranslate"
     | "user-center"
   >;
 

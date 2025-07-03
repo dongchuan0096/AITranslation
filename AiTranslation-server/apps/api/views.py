@@ -20,7 +20,8 @@ from apps.utils.response import APIResponse
 from apps.utils.xunfei_config import XUNFEI_CONFIG, XUNFEI_ASR_URL, SUPPORTED_AUDIO_FORMATS, SUPPORTED_LANGUAGES, ENGINE_TYPES
 from apps.utils.api_logger import log_api_access
 from apps.utils.spark_mucl_cn_iat import create_xunfei_speech_recognition
-from apps.api.models import APIAccessLog, APIUsageStatistics, FileUploadRecord
+from apps.api.models import APIAccessLog, APIUsageStatistics
+from apps.file_upload.models import FileUploadRecord
 from apps.utils.oss_uploader import oss_uploader
 import re
 import random

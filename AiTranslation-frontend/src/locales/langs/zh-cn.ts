@@ -1,6 +1,6 @@
 const local: App.I18n.Schema = {
   system: {
-    title: 'Soybean 管理系统',
+    title: 'AITranslaton',
     updateTitle: '系统版本更新通知',
     updateContent: '检测到系统有新版本发布，是否立即刷新页面？',
     updateConfirm: '立即刷新',
@@ -166,6 +166,7 @@ const local: App.I18n.Schema = {
     translate_comic: '漫画翻译',
     translatevoice: '语音翻译',
     translate_voice: '语音翻译',
+    translatefile: '文件翻译',
     login: '登录',
     403: '无权限',
     404: '页面不存在',
@@ -246,7 +247,8 @@ const local: App.I18n.Schema = {
     plugin_typeit: '打字机',
     plugin_tables: '表格',
     plugin_tables_vtable: 'VTable',
-    configmodel: '模型配置'
+    configmodel: '模型配置',
+    professionaltranslate: '专业翻译'
   },
   page: {
     login: {
@@ -270,7 +272,7 @@ const local: App.I18n.Schema = {
         rememberMe: '记住我',
         forgetPassword: '忘记密码？',
         register: '注册账号',
-        otherAccountLogin: '其他账号登录',
+        otherAccountLogin: '登录',
         otherLoginMode: '其他登录方式',
         superAdmin: '超级管理员',
         admin: '管理员',

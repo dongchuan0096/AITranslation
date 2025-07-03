@@ -63,7 +63,7 @@ const showChatCopilot = computed(() => !route.path.startsWith('/login'));
     <AppProvider>
       <RouterView class="bg-layout" />
       <NWatermark v-if="themeStore.watermark.visible" v-bind="watermarkProps" />
-      <ChatCopilot v-if="showChatCopilot" />
+      <!-- <ChatCopilot v-if="showChatCopilot" /> -->
     </AppProvider>
   </NConfigProvider>
 </template>

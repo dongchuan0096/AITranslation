@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { NButton, NCard, NForm, NFormItem, NIcon, NInput, NSelect, useMessage } from 'naive-ui';
 import { translateTextFull } from '@/service/api/translate';
 import { type SpeechRecognitionResult, speechRecognition } from '@/service/api/speech';
@@ -51,14 +51,28 @@ const languageMap: Record<string, string> = {
 
 const form = ref({
   target_language: 'zh',
-  model_provider: modelConfigStore.config.provider || 'deepseek',
+  model_provider: modelConfigStore.config.translationProvider || 'deepseek',
   api_key: modelConfigStore.config.translationApiKey || '',
-  model_name: modelConfigStore.config.model || 'deepseek-chat',
+  model_name: modelConfigStore.config.translationModel || 'deepseek-chat',
   prompt_content: modelConfigStore.config.prompt || '',
   use_json_format: false,
-  custom_base_url: '',
-  rpm_limit_translation: 0
+  custom_base_url: modelConfigStore.config.translationBaseUrl || '',
+  rpm_limit_translation: modelConfigStore.config.translationRpmLimit || 0
 });
+
+// 保证配置变更时参数自动同步
+watch(
+  () => modelConfigStore.config,
+  config => {
+    form.value.model_provider = config.translationProvider || 'deepseek';
+    form.value.api_key = config.translationApiKey || '';
+    form.value.model_name = config.translationModel || 'deepseek-chat';
+    form.value.prompt_content = config.prompt || '';
+    form.value.custom_base_url = config.translationBaseUrl || '';
+    form.value.rpm_limit_translation = config.translationRpmLimit || 0;
+  },
+  { immediate: true, deep: true }
+);
 
 // 计算录音时长显示
 const recordingTimeDisplay = computed(() => {
@@ -280,13 +294,22 @@ async function translateText() {
     return;
   }
 
+  // 每次都用最新 config
+  const config = modelConfigStore.config;
+  form.value.model_provider = config.translationProvider || 'deepseek';
+  form.value.api_key = config.translationApiKey || '';
+  form.value.model_name = config.translationModel || 'deepseek-chat';
+  form.value.prompt_content = config.prompt || '';
+  form.value.custom_base_url = config.translationBaseUrl || '';
+  form.value.rpm_limit_translation = config.translationRpmLimit || 0;
+
   loading.value = true;
   translatedText.value = '翻译中...';
 
   try {
     const res = await translateTextFull({
       ...form.value,
-      text: recognizedText.value,
+      text: recognizedText.value
     });
 
     const { translation, detected } = processTranslationResult(res.data.translated_text);

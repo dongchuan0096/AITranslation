@@ -1,9 +1,8 @@
 <script setup lang="ts">
-import { ref } from 'vue';
+import { ref, watch } from 'vue';
 import { NButton, NCard, NIcon, NInput, NSelect, useMessage } from 'naive-ui';
 import { translateTextFull } from '@/service/api/translate';
 import { useModelConfigStore } from '@/store/modules/model-config';
-
 const modelConfigStore = useModelConfigStore();
 const message = useMessage();
 
@@ -24,16 +23,29 @@ const form = ref({
   text: '',
   source_language: '',
   target_language: 'zh',
-  model_provider: modelConfigStore.config.provider || 'deepseek',
+  model_provider: modelConfigStore.config.translationProvider || 'deepseek',
   api_key: modelConfigStore.config.translationApiKey || '',
-  model_name: modelConfigStore.config.model || 'deepseek-chat',
+  model_name: modelConfigStore.config.translationModel || 'deepseek-chat',
   prompt_content: modelConfigStore.config.prompt || '',
   use_json_format: false,
-  custom_base_url: '',
-  rpm_limit_translation: 0
+  custom_base_url: modelConfigStore.config.translationBaseUrl || '',
+  rpm_limit_translation: modelConfigStore.config.translationRpmLimit || 0
 });
 const translatedText = ref('');
 const loading = ref(false);
+
+watch(
+  () => modelConfigStore.config,
+  config => {
+    form.value.model_provider = config.translationProvider || 'deepseek';
+    form.value.api_key = config.translationApiKey || '';
+    form.value.model_name = config.translationModel || 'deepseek-chat';
+    form.value.prompt_content = config.prompt || '';
+    form.value.custom_base_url = config.translationBaseUrl || '';
+    form.value.rpm_limit_translation = config.translationRpmLimit || 0;
+  },
+  { immediate: true, deep: true }
+);
 
 async function copyToClipboard(text: string) {
   try {
@@ -45,6 +57,14 @@ async function copyToClipboard(text: string) {
 }
 
 async function handleTranslate() {
+  // 每次都用最新 config
+  const config = modelConfigStore.config;
+  form.value.model_provider = config.translationProvider || 'deepseek';
+  form.value.api_key = config.translationApiKey || '';
+  form.value.model_name = config.translationModel || 'deepseek-chat';
+  form.value.prompt_content = config.prompt || '';
+  form.value.custom_base_url = config.translationBaseUrl || '';
+  form.value.rpm_limit_translation = config.translationRpmLimit || 0;
   if (!form.value.text) {
     message.warning('请输入要翻译的内容');
     return;
@@ -52,6 +72,11 @@ async function handleTranslate() {
   if (!form.value.api_key) {
     message.warning('请前往配置页面配置API Key');
     return;
+  }
+  // 如果提示词为空，设置为默认提示词
+  if (!form.value.prompt_content) {
+    form.value.prompt_content =
+      '你是一个语言识别与翻译助手。请完成以下两件事：（1）判断我提供的原文属于哪种语言，输出该语言的 ISO 639-1 两位语言代码（如 zh 表示中文，en 表示英文，ja 表示日文；（2）将该段原文翻译为我指定的目标语言，翻译时请尽量保持含义准确、语言自然，并控制在不超过原文长度的范围内。请按以下格式输出:"detected": "<原文语言代码>","translation": "<翻译后的文本>"';
   }
   loading.value = true;
   translatedText.value = '翻译中...';

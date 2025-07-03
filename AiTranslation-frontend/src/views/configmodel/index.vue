@@ -133,7 +133,7 @@ const form = ref({
   aiVisionOcrRpmLimit: modelConfigStore.config.aiVisionOcrRpmLimit || 0,
   fontSize: modelConfigStore.config.fontSize || 16,
   autoFontSize: modelConfigStore.config.autoFontSize !== undefined ? modelConfigStore.config.autoFontSize : true,
-  textFont: modelConfigStore.config.textFont || '',
+  textFont: modelConfigStore.config.textFont || 'msyh.ttc',
   layout: modelConfigStore.config.layout || 'vertical',
   textColor: modelConfigStore.config.textColor || '#000000',
   enableTextStroke:
@@ -244,7 +244,7 @@ watch(
       <!-- 文字设置 -->
       <NCollapseItem name="text-settings" title="文字设置">
         <NForm :model="form" label-width="140">
-          <NFormItem label="源语言">
+          <!-- <NFormItem label="源语言">
             <NSelect v-model:value="form.sourceLanguage" :options="sourceLanguageOptions" />
           </NFormItem>
           <NFormItem label="OCR引擎">
@@ -284,13 +284,13 @@ watch(
           </NFormItem>
           <NFormItem label="AI视觉OCR rpm限制">
             <NInputNumber v-model:value="form.aiVisionOcrRpmLimit" placeholder="0表示无限制" />
-          </NFormItem>
+          </NFormItem> -->
           <NFormItem label="字号大小">
             <NInputNumber v-model:value="form.fontSize" :min="8" :max="72" />
           </NFormItem>
-          <NFormItem label="自动字号">
+          <!-- <NFormItem label="自动字号">
             <NSwitch v-model:value="form.autoFontSize" />
-          </NFormItem>
+          </NFormItem> -->
           <NFormItem label="文本字体">
             <NSelect v-model:value="form.textFont" :options="fontOptions" placeholder="选择字体" />
           </NFormItem>
@@ -309,18 +309,18 @@ watch(
           <NFormItem label="描边宽度">
             <NInputNumber v-model:value="form.strokeWidth" :min="1" :max="10" />
           </NFormItem>
-          <NFormItem label="气泡填充方式">
+          <!-- <NFormItem label="气泡填充方式">
             <NSelect v-model:value="form.bubbleFillMethod" :options="bubbleFillOptions" />
-          </NFormItem>
+          </NFormItem> -->
           <NFormItem label="填充颜色">
             <NColorPicker v-model:value="form.fillColor" />
           </NFormItem>
-          <NFormItem label="修复强度">
+          <!-- <NFormItem label="修复强度">
             <NSlider v-model:value="form.repairStrength" :min="0" :max="100" />
-          </NFormItem>
-          <NFormItem label="边缘融合">
+          </NFormItem> -->
+          <!-- <NFormItem label="边缘融合">
             <NSwitch v-model:value="form.edgeBlending" />
-          </NFormItem>
+          </NFormItem> -->
         </NForm>
       </NCollapseItem>
 
@@ -345,7 +345,7 @@ watch(
         </NForm>
       </NCollapseItem>
 
-      <!-- 提示词设置 -->
+      <!-- 提示词设置
       <NCollapseItem name="prompt-settings" title="提示词设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="漫画翻译提示词">
@@ -383,9 +383,9 @@ watch(
             <NInput v-model:value="form.textBoxPromptName" placeholder="请输入文本框提示词名称" />
           </NFormItem>
         </NForm>
-      </NCollapseItem>
+      </NCollapseItem> -->
 
-      <!-- 高质量翻译模式设置 -->
+      <!-- 高质量翻译模式设置
       <NCollapseItem name="high-quality-settings" title="高质量翻译模式设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="AI服务商">
@@ -419,10 +419,10 @@ watch(
             <NInput v-model:value="form.translationPrompt" type="textarea" placeholder="请输入翻译提示词" />
           </NFormItem>
         </NForm>
-      </NCollapseItem>
+      </NCollapseItem> -->
 
       <!-- 气泡编辑设置 -->
-      <NCollapseItem name="bubble-settings" title="气泡编辑设置">
+      <!-- <NCollapseItem name="bubble-settings" title="气泡编辑设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="气泡字号大小">
             <NInputNumber v-model:value="form.bubbleFontSize" :min="8" :max="72" />
@@ -455,10 +455,10 @@ watch(
             <NInputNumber v-model:value="form.bubbleStrokeWidth" :min="1" :max="10" />
           </NFormItem>
         </NForm>
-      </NCollapseItem>
+      </NCollapseItem> -->
 
       <!-- 图片控制设置 -->
-      <NCollapseItem name="image-settings" title="图片控制设置">
+      <!-- <NCollapseItem name="image-settings" title="图片控制设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="图片大小">
             <NSlider v-model:value="form.imageSize" :min="50" :max="200" />
@@ -467,10 +467,10 @@ watch(
             <NSelect v-model:value="form.downloadFormat" :options="downloadFormatOptions" />
           </NFormItem>
         </NForm>
-      </NCollapseItem>
+      </NCollapseItem> -->
 
       <!-- 其他设置 -->
-      <NCollapseItem name="other-settings" title="其他设置">
+      <!-- <NCollapseItem name="other-settings" title="其他设置">
         <NForm :model="form" label-width="140">
           <NFormItem label="位置偏移X" style="display: none">
             <NInputNumber v-model:value="form.positionOffsetX" />
@@ -479,7 +479,7 @@ watch(
             <NInputNumber v-model:value="form.positionOffsetY" />
           </NFormItem>
         </NForm>
-      </NCollapseItem>
+      </NCollapseItem> -->
     </NCollapse>
 
     <!-- 保存按钮 -->

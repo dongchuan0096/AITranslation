@@ -211,7 +211,7 @@ class OSSUploader:
             upload_time = time.time() - start_time
             
             # 保存到数据库
-            from apps.api.models import FileUploadRecord
+            from apps.file_upload.models import FileUploadRecord
             
             file_record = FileUploadRecord.objects.create(
                 user=user,

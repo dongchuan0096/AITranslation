@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { computed, ref } from 'vue';
+import { computed, ref, watch } from 'vue';
 import { translateImage } from '@/service/api/translate';
 import { useModelConfigStore } from '@/store/modules/model-config';
 
@@ -37,15 +37,15 @@ function onFileChange(e: Event) {
   if (!files || files.length === 0) return;
   for (let i = 0; i < files.length; i += 1) {
     const file = files[i];
-      const reader = new FileReader();
+    const reader = new FileReader();
     reader.onload = ev => {
-        const base64 = ev.target?.result as string;
-        const pureBase64 = base64.replace(/^data:image\/\w+;base64,/, '');
-        thumbnails.value.push(base64);
-        images.value.push(pureBase64);
+      const base64 = ev.target?.result as string;
+      const pureBase64 = base64.replace(/^data:image\/\w+;base64,/, '');
+      thumbnails.value.push(base64);
+      images.value.push(pureBase64);
       translatedImages.value.push('');
       translatedTexts.value.push([]);
-      };
+    };
     reader.readAsDataURL(file);
   }
 }
@@ -90,13 +90,13 @@ async function handleTranslate(idx: number) {
         translatedTexts.value[idx] = [res.data.textbox_texts];
       } else {
         translatedTexts.value[idx] = [];
-}
+      }
     }
   } catch {
     errorMessage.value = '图片翻译失败';
   } finally {
     loading.value = false;
-}
+  }
 }
 
 async function translateOne(idx: number, img: string) {
@@ -136,19 +136,24 @@ async function translateAll() {
         return Promise.resolve();
       })
     );
-    } catch {
+  } catch {
     errorMessage.value = '批量翻译失败';
   } finally {
     loading.value = false;
-    }
+  }
 }
 
 function getModelParams(config: any) {
+  // 固定提示词
+  const prompt =
+    '你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。';
   return {
-    api_key: config.apiKey || '',
-    model_name: config.model || '',
-    model_provider: config.provider || '',
-    prompt_content: config.prompt || ''
+    api_key: config.translationApiKey || '',
+    model_name: config.translationModel || 'deepseek-chat',
+    model_provider: config.translationProvider || 'deepseek',
+    prompt_content: prompt,
+    custom_base_url: config.translationBaseUrl || '',
+    rpm_limit_translation: config.translationRpmLimit || 0
   };
 }
 function getFontParams(config: any) {
@@ -192,7 +197,7 @@ function getOtherParams(config: any) {
     use_textbox_prompt: config.enableIndependentTextPrompt ?? false,
     textbox_prompt_content: config.textBoxPrompt || '',
     use_json_format_translation: config.use_json_format_translation ?? false,
-    rpm_limit_translation: config.rpm_limit_translation ?? 0,
+    rpm_limit_translation: config.translationRpmLimit || 0,
     bubble_coords: [],
     target_language: config.target_language || 'zh',
     source_language: config.sourceLanguage || '',
@@ -203,7 +208,7 @@ function getOtherParams(config: any) {
 function openPreview() {
   previewImageSrc.value = currentTranslatedImage.value;
   showPreview.value = true;
-  }
+}
 function closePreview() {
   console.log('closePreview called');
   showPreview.value = false;
@@ -221,6 +226,15 @@ function deleteImage(idx: number) {
     currentImageIndex.value -= 1;
   }
 }
+
+// 保证配置变更时参数自动同步
+watch(
+  () => modelConfigStore.config,
+  () => {
+    // 这里只做占位，实际同步逻辑已在 getModelParams 动态获取
+  },
+  { immediate: true, deep: true }
+);
 </script>
 
 <template>
@@ -276,8 +290,13 @@ function deleteImage(idx: number) {
       <div class="result-text-area">
         <ul>
           <li v-for="(item, idx) in currentBubbleTexts" :key="idx">
-            <span class="lang-tag">{{ langNameMap[item.detected] || item.detected }}</span>
-            {{ item.translation }}
+            <template v-if="typeof item === 'object' && item !== null">
+              <span class="lang-tag">{{ langNameMap[(item as any).detected] || (item as any).detected }}</span>
+              {{ (item as any).translation }}
+            </template>
+            <template v-else>
+              {{ item }}
+            </template>
           </li>
         </ul>
       </div>

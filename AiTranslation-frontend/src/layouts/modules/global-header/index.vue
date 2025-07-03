@@ -58,7 +58,7 @@ function toggleCopilot() {
         @switch="themeStore.toggleThemeScheme"
       />
       <ThemeButton />
-      <button class="ai-copilot-btn ml-8px" @click="toggleCopilot">AI Copilot</button>
+      <!-- <button class="ai-copilot-btn ml-8px" @click="toggleCopilot">AI Copilot</button> -->
       <UserAvatar />
     </div>
   </DarkModeContainer>
