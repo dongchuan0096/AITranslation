@@ -15,25 +15,23 @@
 
 ### 主要页面
 
+![image-20250704225743019](./assets/image-20250704225743019.png)
 
+![image-20250704225807837](./assets/image-20250704225807837.png)
 
-![image-20250704224348614](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704224348614.png)
+![image-20250704225823049](./assets/image-20250704225823049.png)
 
-![image-20250704224422736](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704224422736.png)
+![image-20250704225834641](./assets/image-20250704225834641.png)
 
-![image-20250704224435592](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704224435592.png)
+![image-20250704225848831](./assets/image-20250704225848831.png)
 
-![image-20250704224450418](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704224450418.png)
+![19_20250630](./assets/19_20250630.jpg)
 
-![image-20250704224503946](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704224503946.png)
+![image-20250704093147622](./assets/image-20250704093147622.png)
 
-![image-20250704093138071](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704093138071.png)
+![image-20250704230046424](./assets/image-20250704230046424.png)
 
-![image-20250704093147622](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704093147622.png)
-
-![image-20250704094033427](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704094033427.png)
-
-![image-20250704094048816](C:\Users\Administrator\Desktop\shixi\project\assets\image-20250704094048816.png)
+![image-20250704230059413](./assets/image-20250704230059413.png)
 
 ---
 
