@@ -177,6 +177,37 @@ export const generatedRoutes: GeneratedRoute[] = [
   //     }
   //   ]
   // },
+  {
+    name: 'home',
+    path: '/home',
+    component: 'layout.base$view.home',
+    meta: {
+      title: 'home',
+      i18nKey: 'route.home'
+    }
+  },
+  // {
+  //   name: 'iframe-page',
+  //   path: '/iframe-page/:url',
+  //   component: 'layout.base$view.iframe-page',
+  //   props: true,
+  //   meta: {
+  //     title: 'iframe-page',
+  //     i18nKey: 'route.iframe-page'
+  //   }
+  // },
+  {
+    name: 'login',
+    path: '/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?',
+    component: 'layout.blank$view.login',
+    props: true,
+    meta: {
+      title: 'login',
+      i18nKey: 'route.login',
+      constant: true,
+      hideInMenu: true
+    }
+  },
   // {
   //   name: 'manage',
   //   path: '/manage',
@@ -581,26 +612,7 @@ export const generatedRoutes: GeneratedRoute[] = [
   //     }
   //   ]
   // },
-  // {
-  //   name: 'iframe-page',
-  //   path: '/iframe-page/:url',
-  //   component: 'layout.base$view.iframe-page',
-  //   props: true,
-  //   meta: {
-  //     title: 'iframe-page',
-  //     i18nKey: 'route.iframe-page'
-  //   }
-  // },
-  // {
-  //   name: 'user-center',
-  //   path: '/user-center',
-  //   component: 'layout.base$view.user-center',
-  //   meta: {
-  //     title: 'user-center',
-  //     i18nKey: 'route.user-center'
-  //   }
-  // },
-    {
+  {
     name: 'configmodel',
     path: '/configmodel',
     component: 'layout.base$view.configmodel',
@@ -611,29 +623,6 @@ export const generatedRoutes: GeneratedRoute[] = [
       icon: 'mdi:cog-outline'
     }
   },
-  {
-    name: 'home',
-    path: '/home',
-    component: 'layout.base$view.home',
-    meta: {
-      title: 'home',
-      i18nKey: 'route.home'
-    }
-  },
-
-  {
-    name: 'login',
-    path: '/login/:module(pwd-login|code-login|register|reset-pwd|bind-wechat)?',
-    component: 'layout.blank$view.login',
-    props: true,
-    meta: {
-      title: 'login',
-      i18nKey: 'route.login',
-      constant: true,
-      hideInMenu: true
-    }
-  },
-
   {
     name: 'professionaltranslate',
     path: '/professionaltranslate',
@@ -656,17 +645,17 @@ export const generatedRoutes: GeneratedRoute[] = [
       icon: 'mdi:book-open-variant'
     }
   },
-  {
-    name: 'translatefile',
-    path: '/translatefile',
-    component: 'layout.base$view.translatefile',
-    meta: {
-      title: 'translatefile',
-      i18nKey: 'route.translatefile',
-      order: 5,
-      icon: 'mdi:translate'
-    }
-  },
+  // {
+  //   name: 'translatefile',
+  //   path: '/translatefile',
+  //   component: 'layout.base$view.translatefile',
+  //   meta: {
+  //     title: 'translatefile',
+  //     i18nKey: 'route.translatefile',
+  //     order: 5,
+  //     icon: 'mdi:translate'
+  //   }
+  // },
   {
     name: 'translatetext',
     path: '/translatetext',
@@ -689,6 +678,13 @@ export const generatedRoutes: GeneratedRoute[] = [
       icon: 'iconoir:chat-bubble-translate'
     }
   },
-
-  
+  // {
+  //   name: 'user-center',
+  //   path: '/user-center',
+  //   component: 'layout.base$view.user-center',
+  //   meta: {
+  //     title: 'user-center',
+  //     i18nKey: 'route.user-center'
+  //   }
+  // }
 ];

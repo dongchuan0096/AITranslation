@@ -1,0 +1,1137 @@
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:31:27 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:27 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:27 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:27 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:31:27 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:31:27 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:31:27 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:31:27 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:31:27 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:31:27 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:31:34 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:34 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:31:34 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:31:34 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:34 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:34 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:31:34 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:31:34 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:31:34 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:31:34 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:31:34 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:31:49 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:49 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:49 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:49 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:31:49 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:31:49 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:31:49 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:31:49 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:31:49 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:31:49 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:31:54 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:31:54 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:31:54 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:31:54 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:31:54 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:31:54 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:31:54 - MangaOCRInterface - [31mERROR[0m - [31m❌ MangaOCR 模型预加载失败。[0m
+2025-07-04 08:31:54 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\prompts.json[0m
+2025-07-04 08:31:54 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\prompts.json[0m
+2025-07-04 08:31:54 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-04 08:31:54 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:31:54 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\prompts.json[0m
+2025-07-04 08:31:54 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\prompts.json[0m
+2025-07-04 08:31:54 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-04 08:31:54 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-04 08:31:55 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\prompts.json[0m
+2025-07-04 08:31:55 - ConfigLoader - [33mWARNING[0m - [33mJSON 配置文件未找到: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\textbox_prompts.json，返回默认值。[0m
+2025-07-04 08:31:55 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:02 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: (ProtocolError('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)), '(Request ID: 7665294c-4aef-44e3-b3d7-e1f907dce7c9)')[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connection.py", line 652, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connection.py", line 805, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\requests\adapters.py", line 589, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 843, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 789, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 490, in _make_request
+    raise new_e
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 466, in _make_request
+    self._validate_conn(conn)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connectionpool.py", line 1095, in _validate_conn
+    conn.connect()
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connection.py", line 652, in connect
+    sock_and_verified = _ssl_wrap_socket_and_match_hostname(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\connection.py", line 805, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+               ^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\ssl_.py", line 465, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\urllib3\util\ssl_.py", line 509, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 1042, in _create
+    self.do_handshake()
+  File "D:\Software\IDE\Anaconda\Lib\ssl.py", line 1320, in do_handshake
+    self._sslobj.do_handshake()
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 18, in __init__
+    self.tokenizer = AutoTokenizer.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\models\auto\tokenization_auto.py", line 1013, in from_pretrained
+    return tokenizer_class.from_pretrained(pretrained_model_name_or_path, *inputs, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\tokenization_utils_base.py", line 1968, in from_pretrained
+    for template in list_repo_templates(
+                    ^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 161, in list_repo_templates
+    return [
+           ^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\hf_api.py", line 3131, in list_repo_tree
+    for path_info in paginate(path=tree_url, headers=headers, params={"recursive": recursive, "expand": expand}):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_pagination.py", line 36, in paginate
+    r = session.get(path, params=params, headers=headers)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_http.py", line 96, in send
+    return super().send(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\requests\adapters.py", line 604, in send
+    raise ConnectionError(err, request=request)
+requests.exceptions.ConnectionError: (ProtocolError('Connection aborted.', ConnectionResetError(10054, '远程主机强迫关闭了一个现有的连接。', None, 10054, None)), '(Request ID: 7665294c-4aef-44e3-b3d7-e1f907dce7c9)')
+2025-07-04 08:32:02 - MangaOCRInterface - [31mERROR[0m - [31m❌ MangaOCR 模型预加载失败。[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:32:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:05 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:32:05 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:32:05 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:32:05 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:32:05 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:32:05 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:32:05 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:32:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:09 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:32:09 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:32:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:09 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:32:09 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:32:09 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:32:09 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:32:09 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:32:09 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:32:09 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:32:09 - MangaOCRInterface - [31mERROR[0m - [31m❌ MangaOCR 模型预加载失败。[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "NotoSans-Medium.ttf", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#FF0000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#8BB8E0FF", "text_color": "#6FBC8FFF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: NotoSans-Medium.ttf, 字号: 20[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#FF0000FF, width=5[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-04 08:46:28 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:28 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:28 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: NotoSans-Medium.ttf, 修正后: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf[0m
+2025-07-04 08:46:29 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-04 08:46:29 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-04 08:46:29 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-04 08:46:29 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-04 08:46:29 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-04 08:46:29 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-04 08:46:29 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:29 - YOLOv12Interface - [32mINFO[0m - [32m开始加载 YOLOv12 本地模型: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\weights\best.pt[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:46:33 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:33 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:33 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:33 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:46:33 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:46:33 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:46:33 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:46:33 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:46:33 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:46:33 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:46:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:40 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:46:40 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:46:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:46:40 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:46:40 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:46:40 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:46:40 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:46:40 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:46:40 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:46:40 - MangaOCRInterface - [31mERROR[0m - [31m❌ MangaOCR 模型预加载失败。[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "NotoSans-Medium.ttf", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#FF0000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#8BB8E0FF", "text_color": "#6FBC8FFF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: NotoSans-Medium.ttf, 字号: 20[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#FF0000FF, width=5[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-04 08:51:10 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:10 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: NotoSans-Medium.ttf, 修正后: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-04 08:51:10 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-04 08:51:10 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-04 08:51:10 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-04 08:51:10 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-04 08:51:10 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:10 - YOLOv12Interface - [32mINFO[0m - [32m开始加载 YOLOv12 本地模型: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\weights\best.pt[0m
+2025-07-04 08:51:10 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 本地模型加载成功[0m
+2025-07-04 08:51:11 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 检测到 8 个候选框 (阈值: 0.6)[0m
+2025-07-04 08:51:11 - CoreDetection - [32mINFO[0m - [32m检测到 8 个气泡候选框。[0m
+2025-07-04 08:51:11 - CoreDetection - [32mINFO[0m - [32m最终获取并排序了 8 个有效气泡坐标。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m气泡检测完成，找到 8 个气泡 (耗时: 0.78s)[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m步骤 2: OCR 识别文本...[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:51:11 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:51:11 - CoreOCR - [31mERROR[0m - [31m无法初始化 MangaOCR，OCR 步骤跳过。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mOCR 完成 (耗时: 0.04s)[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mBEFORE_TRANSLATION 钩子修改了文本或参数。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m步骤 3: 翻译文本...[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m翻译模型: deepseek, 模型名称: deepseek-chat[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m待翻译文本数量: 8[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m调用 translate_text_list 开始 - 模型: deepseek, 模型名: deepseek-chat, API密钥长度: 35, 自定义BaseURL: 无[0m
+2025-07-04 08:51:11 - CoreTranslation - [32mINFO[0m - [32m开始批量翻译 8 个文本片段 (使用 deepseek, rpm: 无)...[0m
+2025-07-04 08:51:11 - CoreTranslation - [32mINFO[0m - [32m批量翻译完成。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mtranslate_text_list 调用完成，返回结果数量: 8[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m翻译结果:[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m翻译完成 (耗时: 0.00s)[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mAFTER_TRANSLATION 钩子修改了翻译结果。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m步骤 4: 修复/填充背景 (方法: solid)...[0m
+2025-07-04 08:51:11 - CoreInpainting - [32mINFO[0m - [32m创建气泡掩码，图像大小：(2200, 1700, 3), 气泡数量：8[0m
+2025-07-04 08:51:11 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:11 - CoreInpainting - [32mINFO[0m - [32m执行纯色填充，颜色: #8BB8E0FF[0m
+2025-07-04 08:51:11 - CoreInpainting - [32mINFO[0m - [32m纯色填充完成，已生成对应的'干净'背景。[0m
+2025-07-04 08:51:11 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m背景处理完成 (耗时: 0.60s)[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mAFTER_INPAINTING 钩子修改了图像。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mBEFORE_RENDERING 钩子修改了渲染参数。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m步骤 5: 渲染翻译文本...[0m
+2025-07-04 08:51:11 - CoreRendering - [32mINFO[0m - [32m开始渲染 8 个气泡的文本...[0m
+2025-07-04 08:51:11 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:51:11 - CoreRendering - [32mINFO[0m - [32m成功加载字体: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf (大小: 30)[0m
+2025-07-04 08:51:11 - CoreRendering - [32mINFO[0m - [32m所有气泡文本渲染完成。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m文本渲染完成 (耗时: 0.01s)[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32mAFTER_PROCESSING 钩子修改了最终结果。[0m
+2025-07-04 08:51:11 - CoreProcessing - [32mINFO[0m - [32m图像翻译流程完成，总耗时: 1.47s[0m
+2025-07-04 08:51:12 - TranslateAPI - [32mINFO[0m - [32m返回参数 keys: ['translated_image', 'clean_image', 'original_texts', 'bubble_texts', 'textbox_texts', 'bubble_coords'][0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m请求参数（不含图片数据）: {"api_key": "sk-da5ff127540d4c9cb8ff1bb1ae16f71d", "model_name": "deepseek-chat", "model_provider": "deepseek", "prompt_content": "你是一个好用的翻译助手。请将我的非中文语句段落连成一句或几句话并翻译成中文，我发给你所有的话都是需要翻译的内容，你只需要回答翻译结果。特别注意：翻译结果字数不能超过原文字数！翻译结果请符合中文的语言习惯。", "custom_base_url": "", "rpm_limit_translation": 0, "fontSize": 20, "autoFontSize": true, "fontFamily": "NotoSans-Medium.ttf", "textDirection": "vertical", "rotation_angle": 0, "enableTextStroke": false, "textStrokeColor": "#FF0000FF", "textStrokeWidth": 5, "ocr_engine": "manga_ocr", "baidu_api_key": "", "baidu_secret_key": "", "baidu_version": "standard", "ai_vision_provider": "siliconflow", "ai_vision_api_key": "", "ai_vision_model_name": "", "ai_vision_ocr_prompt": "", "custom_ai_vision_base_url": "", "use_json_format_ai_vision_ocr": false, "rpm_limit_ai_vision_ocr": 0, "fill_color": "#8BB8E0FF", "text_color": "#6FBC8FFF", "use_inpainting": false, "blend_edges": true, "inpainting_strength": 50, "use_lama": false, "skip_translation": false, "skip_ocr": false, "remove_only": false, "use_textbox_prompt": false, "textbox_prompt_content": "", "use_json_format_translation": false, "bubble_coords": [], "target_language": "zh", "source_language": "ja"}[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m----- 翻译请求参数 -----[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m气泡填充方式: useInpainting=False, useLama=False[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m文字方向: vertical, 字体: NotoSans-Medium.ttf, 字号: 20[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m跳过翻译: False, 跳过OCR: False[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m仅消除模式: False[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32mJSON输出模式: 翻译=False, AI视觉OCR=False[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32mrpm 设置: 翻译服务 rpm=0, AI视觉OCR rpm=0[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m描边设置: enable=False, color=#FF0000FF, width=5[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m------------------------[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m自定义 OpenAI Base URL: 未提供[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m使用自动字体大小[0m
+2025-07-04 08:53:21 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:53:21 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m原始字体路径: NotoSans-Medium.ttf, 修正后: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\app\static\fonts\NotoSans-Medium.ttf[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m图像成功加载，大小: (1700, 2200)[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m未提供手动标注气泡坐标，将自动检测[0m
+2025-07-04 08:53:21 - TranslateAPI - [32mINFO[0m - [32m使用纯色填充方式[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m开始处理图像翻译流程: 源=ja, 目标=zh, 修复=solid[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32mBEFORE_PROCESSING 钩子修改了参数/图像。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m步骤 1: 检测气泡坐标...[0m
+2025-07-04 08:53:21 - YOLOv12Interface - [32mINFO[0m - [32mYOLOv12 检测到 8 个候选框 (阈值: 0.6)[0m
+2025-07-04 08:53:21 - CoreDetection - [32mINFO[0m - [32m检测到 8 个气泡候选框。[0m
+2025-07-04 08:53:21 - CoreDetection - [32mINFO[0m - [32m最终获取并排序了 8 个有效气泡坐标。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m气泡检测完成，找到 8 个气泡 (耗时: 0.29s)[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m步骤 2: OCR 识别文本...[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:53:21 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:53:21 - CoreOCR - [31mERROR[0m - [31m无法初始化 MangaOCR，OCR 步骤跳过。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32mOCR 完成 (耗时: 0.03s)[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32mBEFORE_TRANSLATION 钩子修改了文本或参数。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m步骤 3: 翻译文本...[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m翻译模型: deepseek, 模型名称: deepseek-chat[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m待翻译文本数量: 8[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m调用 translate_text_list 开始 - 模型: deepseek, 模型名: deepseek-chat, API密钥长度: 35, 自定义BaseURL: 无[0m
+2025-07-04 08:53:21 - CoreTranslation - [32mINFO[0m - [32m开始批量翻译 8 个文本片段 (使用 deepseek, rpm: 无)...[0m
+2025-07-04 08:53:21 - CoreTranslation - [32mINFO[0m - [32m批量翻译完成。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32mtranslate_text_list 调用完成，返回结果数量: 8[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m翻译结果:[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m翻译完成 (耗时: 0.00s)[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32mAFTER_TRANSLATION 钩子修改了翻译结果。[0m
+2025-07-04 08:53:21 - CoreProcessing - [32mINFO[0m - [32m步骤 4: 修复/填充背景 (方法: solid)...[0m
+2025-07-04 08:53:21 - CoreInpainting - [32mINFO[0m - [32m创建气泡掩码，图像大小：(2200, 1700, 3), 气泡数量：8[0m
+2025-07-04 08:53:21 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:53:21 - CoreInpainting - [32mINFO[0m - [32m执行纯色填充，颜色: #8BB8E0FF[0m
+2025-07-04 08:53:21 - CoreInpainting - [32mINFO[0m - [32m纯色填充完成，已生成对应的'干净'背景。[0m
+2025-07-04 08:53:21 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32m背景处理完成 (耗时: 0.62s)[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32mAFTER_INPAINTING 钩子修改了图像。[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32mBEFORE_RENDERING 钩子修改了渲染参数。[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32m步骤 5: 渲染翻译文本...[0m
+2025-07-04 08:53:22 - CoreRendering - [32mINFO[0m - [32m开始渲染 8 个气泡的文本...[0m
+2025-07-04 08:53:22 - CoreRendering - [32mINFO[0m - [32m所有气泡文本渲染完成。[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32m文本渲染完成 (耗时: 0.00s)[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32mAFTER_PROCESSING 钩子修改了最终结果。[0m
+2025-07-04 08:53:22 - CoreProcessing - [32mINFO[0m - [32m图像翻译流程完成，总耗时: 0.98s[0m
+2025-07-04 08:53:22 - TranslateAPI - [32mINFO[0m - [32m返回参数 keys: ['translated_image', 'clean_image', 'original_texts', 'bubble_texts', 'textbox_texts', 'bubble_coords'][0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:54:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:40 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:40 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:54:40 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:54:40 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:54:40 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:54:40 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:54:40 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:54:40 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:54:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:47 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:54:47 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:54:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:47 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:54:47 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:54:47 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:54:47 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:54:47 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:54:47 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:54:47 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32m漫画翻译器启动[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32m==============================[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32m系统信息: Windows-11-10.0.22000-SP0[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32mPython版本: 3.12.4[0m
+2025-07-04 08:55:00 - comic_translator - [32mINFO[0m - [32m已手动添加 '.js' 的 MIME 类型为 'text/javascript'[0m
+2025-07-04 08:55:00 - PluginManager - [32mINFO[0m - [32m创建插件管理器实例...[0m
+2025-07-04 08:55:00 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:00 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:00 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:00 - ConfigLoader - [32mINFO[0m - [32m成功加载 JSON 配置文件: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\config\plugin_default_states.json[0m
+2025-07-04 08:55:00 - PluginManager - [32mINFO[0m - [32m已加载插件默认启用状态: {'示例插件': False, '文本装饰器': False}[0m
+2025-07-04 08:55:00 - PluginManager - [32mINFO[0m - [32m插件管理器初始化，扫描目录: ['C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\src/plugins', 'C:\\Users\\Administrator\\Desktop\\shixi\\project\\Saber-Translator-main\\plugins'][0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m开始发现和加载插件...[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src/plugins[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m扫描插件目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\plugins[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m发现插件类: ExamplePlugin in example_plugin[0m
+2025-07-04 08:55:01 - Plugin.示例插件 - [32mINFO[0m - [32m示例插件正在设置...[0m
+2025-07-04 08:55:01 - Plugin.示例插件 - [32mINFO[0m - [32m插件 '示例插件' 配置已加载: {}[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m插件 '示例插件' 加载、配置并设置成功。[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m发现插件类: TextAffixerPlugin in text_affixer[0m
+2025-07-04 08:55:01 - Plugin.文本装饰器 - [32mINFO[0m - [32m'文本装饰器' 插件已加载并设置。[0m
+2025-07-04 08:55:01 - Plugin.文本装饰器 - [32mINFO[0m - [32m插件 '文本装饰器' 配置已加载: {'text_prefix': '', 'text_suffix': '', 'apply_to_textbox': False}[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m插件 '文本装饰器' 加载、配置并设置成功。[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m插件加载完成，共加载 2 个插件。[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m根据用户设置启用插件...[0m
+2025-07-04 08:55:01 - PluginManager - [32mINFO[0m - [32m共启用 0 个插件（根据用户设置）。[0m
+2025-07-04 08:55:01 - comic_translator - [32mINFO[0m - [32m插件管理器初始化完成。[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32mMangaOCR 实例初始化成功(使用默认路径)。耗时: 17.99 秒[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m✅ MangaOCR 模型预加载成功，可以立即使用。[0m
+2025-07-04 08:55:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:05 - LAMAInterface - [33mWARNING[0m - [33m未找到 sd-webui-cleaner 目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\sd-webui-cleaner，LAMA 功能不可用。[0m
+2025-07-04 08:55:05 - comic_translator - [32mINFO[0m - [32m蓝图注册成功[0m
+2025-07-04 08:55:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:05 - PathHelpers - [32mINFO[0m - [32m开发环境中，项目根目录: C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main[0m
+2025-07-04 08:55:05 - SystemAPI - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:55:05 - comic_translator - [32mINFO[0m - [32m服务监控线程已启动[0m
+2025-07-04 08:55:05 - sakura_service_checker - [32mINFO[0m - [32m启动Sakura服务监控线程[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m在后台线程中预加载 MangaOCR 模型...[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m已提高预加载线程优先级[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m开始初始化 MangaOCR 实例，如果首次使用可能会自动下载模型文件。[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程。[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m未检测到GPU，将使用CPU运行[0m
+2025-07-04 08:55:05 - comic_translator - [32mINFO[0m - [32m已启动 MangaOCR 模型预加载线程[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m优先使用本地模型，已设置离线模式...[0m
+2025-07-04 08:55:05 - comic_translator - [32mINFO[0m - [32m程序正在运行，请在浏览器中访问 http://127.0.0.1:5000/[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [33mWARNING[0m - [33m无法修改transformers网络请求函数: module 'transformers.utils' has no attribute 'http_get_request'[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [31mERROR[0m - [31m使用本地路径加载模型失败: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [32mINFO[0m - [32m尝试使用默认路径加载模型...[0m
+2025-07-04 08:55:05 - MangaOCRInterface - [31mERROR[0m - [31m初始化 MangaOCR 实例失败: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.[0m
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 523, in cached_files
+    _get_cache_file_to_return(path_or_repo_id, filename, cache_dir, revision) for filename in full_filenames
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 140, in _get_cache_file_to_return
+    resolved_file = try_to_load_from_cache(path_or_repo_id, full_filename, cache_dir=cache_dir, revision=revision)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 106, in _inner_fn
+    validate_repo_id(arg_value)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 160, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.errors.HFValidationError: Repo id must use alphanumeric chars or '-', '_', '.', '--' and '..' are forbidden, '-' and '.' cannot start or end the name, max length is 96: 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 99, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(
+                          ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 359, in get_image_processor_dict
+    raise OSError(
+OSError: Can't load image processor for 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\..\..\manga_ocr_model' is the correct path to a directory containing a preprocessor_config.json file
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 470, in cached_files
+    hf_hub_download(
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\utils\_validators.py", line 114, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 961, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1068, in _hf_hub_download_to_cache_dir
+    _raise_on_head_call_error(head_call_error, force_download, local_files_only)
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\huggingface_hub\file_download.py", line 1587, in _raise_on_head_call_error
+    raise LocalEntryNotFoundError(
+huggingface_hub.errors.LocalEntryNotFoundError: Cannot find the requested files in the disk cache and outgoing traffic has been disabled. To enable hf.co look-ups and downloads online, set 'local_files_only' to False.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Administrator\Desktop\shixi\project\Saber-Translator-main\src\interfaces\manga_ocr_interface.py", line 109, in get_manga_ocr_instance
+    _manga_ocr_instance = manga_ocr.MangaOcr(force_cpu=force_cpu)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\manga_ocr\ocr.py", line 17, in __init__
+    self.processor = ViTImageProcessor.from_pretrained(pretrained_model_name_or_path)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 208, in from_pretrained
+    image_processor_dict, kwargs = cls.get_image_processor_dict(pretrained_model_name_or_path, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\image_processing_base.py", line 340, in get_image_processor_dict
+    resolved_image_processor_file = cached_file(
+                                    ^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 312, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\Software\IDE\Anaconda\Lib\site-packages\transformers\utils\hub.py", line 543, in cached_files
+    raise OSError(
+OSError: We couldn't connect to 'https://huggingface.co' to load the files, and couldn't find them in the cached files.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+2025-07-04 08:55:05 - MangaOCRInterface - [31mERROR[0m - [31m❌ MangaOCR 模型预加载失败。[0m
