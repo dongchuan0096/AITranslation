@@ -40,7 +40,7 @@ export function translateTextFull(data: {
   return request({
     url: '/api/text-translate/',
     method: 'post',
-    timeout: 30000,
+    timeout: 3000000,
     data
   });
 }
@@ -97,7 +97,7 @@ export function translateImage(data: {
   return request({
     url: '/api/translate_image/',
     method: 'post',
-    timeout: 60000,
+    timeout: 6000000,
     data
   });
 }
@@ -134,7 +134,7 @@ export function reRenderImage(data: {
   return request({
     url: '/api/re_render_image/',
     method: 'post',
-    timeout: 30000,
+    timeout: 3000000,
     data
   });
 }
