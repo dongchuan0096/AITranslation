@@ -36,7 +36,9 @@
 在运行处理脚本之前，请确保你已经下载了 Manga109 数据集，并按如下结构组织文件。脚本需要读取 annotations 目录下的 XML 文件、books.txt 文件。
 
 Manga109数据集官网：http://www.manga109.org/
-需要到https://huggingface.co/datasets/hal-utokyo/Manga109申请，需要使用带edu后缀邮箱注册的huggingface账号申请
+需要到https://huggingface.co/datasets/hal-utokyo/Manga109
+
+申请，需要使用带edu后缀邮箱注册的huggingface账号申请
 
 ```
 Manga109/
