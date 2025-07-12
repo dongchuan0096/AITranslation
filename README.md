@@ -1,19 +1,8 @@
 # AI翻译助手项目
 
-## 项目预览
 
-本项目是一个基于AI的智能翻译助手系统，包含前端管理界面和后端API服务。系统支持多种AI模型（OpenAI、DeepSeek等），提供文本翻译、文件翻译等功能，并集成了用户认证、文件上传等完整功能模块。
 
-### 主要功能
-- 🤖 多AI模型支持（OpenAI GPT、DeepSeek等）
-- 🌐 智能文本翻译
-- 📁 文件翻译支持
-- 👤 用户认证与权限管理
-- 📧 邮件服务集成
-- 🔄 异步任务处理
-- 🎨 现代化管理界面
-
-### 主要页面
+## 主要页面
 
 ![image-20250704225743019](./assets/image-20250704225743019.png)
 
@@ -35,109 +24,60 @@
 
 ---
 
-## 技术栈
+## 漫画气泡框识别
+使用Manga109数据集在Yolov12和RT-DETR上分别做迁移训练,实验结果：
 
-### 前端技术栈
-- **框架**: Vue 3.5.17 + TypeScript 5.8.3
-- **构建工具**: Vite 7.0.0
-- **UI组件库**: Naive UI 2.42.0 + Ant Design Vue
-- **状态管理**: Pinia 3.0.3
-- **路由**: Vue Router 4.5.1
-- **HTTP客户端**: Axios + Alova
-- **样式**: UnoCSS + Sass
-- **图表**: ECharts 5.6.0 + AntV G2/G6
-- **国际化**: Vue I18n 11.1.7
-- **代码规范**: ESLint + Prettier
+![image-20250712220612999](./assets/image-20250712220612999.png)
 
-### 后端技术栈
-- **框架**: Django 5.2.3 + Django REST Framework 3.14.0
-- **数据库**: SQLite（开发）/ 支持MySQL、PostgreSQL
-- **认证**: JWT (djangorestframework-simplejwt 5.3.0)
-- **AI集成**: 
-  - OpenAI API (openai 1.12.0)
-  - DeepSeek API
-  - LangChain 0.1.0
-- **异步任务**: Celery 5.3.0 + Redis 5.0.0
-- **文件存储**: 阿里云OSS (oss2 2.18.0)
-- **跨域处理**: django-cors-headers 4.3.1
-- **WebSocket**: websocket-client 1.6.4
+### 数据处理
 
-### 开发工具
-- **包管理**: pnpm (前端) + pip (后端)
-- **版本控制**: Git
-- **代码提交**: simple-git-hooks + lint-staged
-- **类型检查**: vue-tsc
-- **代码检查**: ESLint + Vue ESLint Parser
+代码位于/Text-box-recogniton/data-process/data_process(text).ipynb
 
-### 部署相关
-- **容器化**: Docker + Docker Compose
-- **环境变量**: python-dotenv
-- **静态文件**: Django Static Files
-- **邮件服务**: SMTP (163邮箱)
+在运行处理脚本之前，请确保你已经下载了 Manga109 数据集，并按如下结构组织文件。脚本需要读取 annotations 目录下的 XML 文件、books.txt 文件。
 
----
-
-## 快速开始
-
-### 环境要求
-- Node.js >= 18.20.0
-- Python >= 3.8
-- pnpm >= 8.7.0
-- Redis (用于Celery异步任务)
-
-### 前端启动
-```bash
-cd AiTranslation-frontend
-pnpm install
-pnpm dev
-```
-
-### 后端启动
-```bash
-cd AiTranslation-server
-pip install -r requirements.txt
-python manage.py migrate
-python manage.py runserver
-```
-
-### 环境配置
-1. 复制并配置环境变量文件
-2. 配置AI服务API密钥
-3. 配置数据库连接
-4. 启动Redis服务
-
-### 开发命令
-- `pnpm dev`: 启动前端开发服务器
-- `pnpm build`: 构建前端生产版本
-- `python manage.py runserver`: 启动Django开发服务器
-- `python manage.py migrate`: 执行数据库迁移
-- `python manage.py createsuperuser`: 创建管理员用户
-
----
-
-## 项目结构
+Manga109数据集官网：http://www.manga109.org/
+需要到https://huggingface.co/datasets/hal-utokyo/Manga109申请，需要使用带edu后缀邮箱注册的huggingface账号申请
 
 ```
-project/
-├── AiTranslation-frontend/     # 前端项目
-│   ├── src/                   # 源代码
-│   ├── packages/              # 子包模块
-│   ├── package.json           # 前端依赖配置
-│   └── tsconfig.json          # TypeScript配置
-├── AiTranslation-server/      # 后端项目
-│   ├── Translation/           # Django项目配置
-│   │   └── settings.py        # Django设置文件
-│   ├── apps/                  # Django应用模块
-│   ├── requirements.txt       # Python依赖配置
-│   └── manage.py             # Django管理脚本
-├── yolov12/                   # YOLO目标检测模块
-├── Saber-Translator-main/     # 翻译器主模块
-└── README.md                  # 项目说明文档
+Manga109/
+├── annotations/
+│   ├── Akuhamu.xml
+│   ├── Amagami.xml
+│   └── ... (所有漫画的XML标注文件)
+├── images/
+│   ├── Akuhamu/
+│   │   ├── 000.jpg
+│   │   └── ...
+│   └── ... (所有漫画的图片)
+├── books.txt          (包含109本漫画标题的列表)
+└── prepare_data.py    <-- (你的数据处理脚本)
 ```
 
+数据处理脚本 (prepare_data.py) 主要执行以下四个步骤：
 
----
+1. **读取漫画标题列表**
+   - 脚本首先从 books.txt 文件中读取所有109本漫画的官方标题。
+2. **划分数据集**
+   - 为了保证实验的可复现性，脚本使用固定的随机种子 (seed=42) 对漫画标题列表进行洗牌。
+   - 然后，它按照 **书本级别** 将数据集划分为训练集、验证集和测试集，比例大致为 **84 (训练) : 5 (验证) : 10 (测试)**。
+   - 按书本划分可以有效防止同一本书的页面同时出现在训练集和验证/测试集中，避免数据泄露。
+3. **解析XML并转换为COCO格式**
+   - 脚本会遍历划分好的标题列表，并找到对应的XML标注文件。
+   - 对于每本书的每一页，它会解析XML文件，但 **仅提取类别为 text 的标注框**。其他如 body, face 等类型的标注会被忽略。
+   - 它将每个文本框的坐标 (xmin, ymin, xmax, ymax) 转换为 COCO 数据集标准格式 ([x, y, width, height])。
+   - 同时，它会记录每张图片的元信息，如文件名 (书名/页码.jpg)、宽度和高度。
+4. **保存为JSON文件**
+   - 最后，脚本将为训练集、验证集和测试集分别生成三个独立的 json 文件。这些文件完全遵循 COCO 格式，可以直接用于后续的模型训练和评估。
+   - 使用/Text-box-recogniton/data-process/coco2yolov.ipynb将coco格式的数据集转成yolov格式
 
-## 许可证
+## 项目技术栈
 
-本项目采用 MIT 许可证 - 查看 [LICENSE](LICENSE) 文件了解详情。
+### 前端
+
+Vue3+Ts
+
+前端模板：[soybeanjs/soybean-admin: A clean, elegant, beautiful and powerful admin template, based on Vue3, Vite7, TypeScript, Pinia, NaiveUI and UnoCSS. 一个清新优雅、高颜值且功能强大的后台管理模板，基于最新的前端技术栈，包括 Vue3, Vite7, TypeScript, Pinia, NaiveUI 和 UnoCSS。](https://github.com/soybeanjs/soybean-admin/)
+
+### 后端
+
+Django+sqlite
